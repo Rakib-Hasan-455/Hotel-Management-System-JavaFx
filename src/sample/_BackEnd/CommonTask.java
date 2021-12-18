@@ -20,8 +20,11 @@ public class CommonTask extends Main {
     public static double xx, yy;
 
     public static void pageNavigation(String to, Stage stage, Class<?> classes, String title, int width, int height) throws IOException {
-
+        double xTemp = x;
+        double yTemp = y;
         if (stage == null) {
+            xTemp = x + (width/5.0);
+            yTemp = y + (height/7.0);
             stage = new Stage();
             stage.initStyle(StageStyle.UNDECORATED);
             newStage = stage;
@@ -32,8 +35,8 @@ public class CommonTask extends Main {
         stage.setTitle(title);
 //        Rectangle2D primScreenBounds = Screen.getPrimary().getVisualBounds();
 //        System.out.println("x->"+x+" y->"+y);
-        stage.setX(x);
-        stage.setY(y);
+        stage.setX(xTemp);
+        stage.setY(yTemp);
         stage.setScene(new Scene(root, width, height));
 
         root.setOnMousePressed(event -> {
@@ -49,6 +52,8 @@ public class CommonTask extends Main {
                 y = finalStage.getY();
 //            }
         });
+        x = finalStage.getX();
+        y = finalStage.getY();
 //        ResizeHelper.addResizeListener(stage);
         stage.show();
     }

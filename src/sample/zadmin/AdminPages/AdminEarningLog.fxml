@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="880.0" styleClass="bodybg" stylesheets="@CSS/imageSetAdmin.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.zadmin.AdminPages.AdminEarningLog">
+   <children>
+      <TextField layoutX="345.0" layoutY="29.0" promptText="Search Earning Info" styleClass="searchBox" />
+      <TableView fx:id="earningLogTable" layoutX="14.0" layoutY="70.0" prefHeight="485.0" prefWidth="807.0">
+        <columns>
+          <TableColumn fx:id="nidCol" prefWidth="87.0" text="NID" />
+          <TableColumn fx:id="roomNoCol" prefWidth="84.0" text="Room No" />
+            <TableColumn fx:id="roomTypeCol" prefWidth="104.0" text="Room Type" />
+            <TableColumn fx:id="checkedInCol" prefWidth="103.0" text="Checked In" />
+            <TableColumn fx:id="checkedOutCol" prefWidth="113.0" text="Checked Out" />
+            <TableColumn fx:id="priceDayCol" prefWidth="116.0" text="Price/Day" />
+            <TableColumn fx:id="totalPriceCol" prefWidth="112.0" text="Total Price" />
+            <TableColumn fx:id="slipCol" prefWidth="86.0" text="Slip" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

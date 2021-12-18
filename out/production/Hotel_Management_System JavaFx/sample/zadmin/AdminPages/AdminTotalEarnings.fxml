@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" styleClass="bodybg" stylesheets="@CSS/imageSetAdmin.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.zadmin.AdminPages.AdminTotalEarnings">
+   <children>
+      <Label layoutX="142.0" layoutY="187.0" text="Earning This Month           : ">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="141.0" layoutY="250.0" text="Earning This Year               : ">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="141.0" layoutY="311.0" text="Total Earning of All year    : ">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="earnMonth" layoutX="465.0" layoutY="188.0" prefHeight="36.0" prefWidth="110.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="earnYear" layoutX="464.0" layoutY="251.0" prefHeight="36.0" prefWidth="110.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="earnAll" layoutX="464.0" layoutY="312.0" prefHeight="36.0" prefWidth="110.0" text=" ">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="575.0" layoutY="188.0" prefHeight="36.0" prefWidth="59.0" text="Taka">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="575.0" layoutY="251.0" prefHeight="36.0" prefWidth="59.0" text="Taka">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="575.0" layoutY="312.0" prefHeight="36.0" prefWidth="59.0" text="Taka">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

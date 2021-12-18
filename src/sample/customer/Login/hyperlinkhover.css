@@ -1,0 +1,9 @@
+.hyperlink:hover {
+    -fx-text-fill: #afffef;
+    -fx-scale-x: 1.10;
+    -fx-scale-y: 1.10;
+}
+
+.hyperlink:pressed{
+    -fx-text-fill: #ffffff;
+}

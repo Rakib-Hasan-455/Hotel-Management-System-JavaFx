@@ -1,0 +1,83 @@
+.customerLoginBtn{
+    -fx-background-color: lightyellow;
+    -fx-border-color: gray;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
+
+.customerLoginBtn:hover{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-scale-X: 1.10;
+    -fx-scale-y: 1.05;
+}
+
+.customerLoginBtn:pressed{
+    /*-fx-background-color: lightgreen;*/
+    -fx-scale-y: .95;
+    -fx-scale-x: 1;
+}
+
+/*.customerLoginBtn:focused{*/
+/*    -fx-background-color: lightgreen;*/
+/*}*/
+
+/*.customerLoginBtn:selected{*/
+/*    -fx-background-color: lightgreen;*/
+/*}*/
+
+.managerLoginBtn{
+    -fx-background-color:  MistyRose;
+    -fx-border-color: gray;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
+
+.managerLoginBtn:hover{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-scale-X: 1.10;
+    -fx-scale-y: 1.05;
+}
+
+.managerLoginBtn:pressed{
+    /*-fx-background-color: lightgreen;*/
+    -fx-scale-y: .95;
+    -fx-scale-x: 1;
+}
+
+/*.managerLoginBtn:focused{*/
+/*    -fx-background-color: lightgreen;*/
+/*}*/
+
+/*.managerLoginBtn:selected{*/
+/*    -fx-background-color: lightgreen;*/
+/*}*/
+
+.adminLoginBtn{
+    -fx-background-color:   lightcyan;
+    -fx-border-color: gray;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
+
+.adminLoginBtn:hover{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-scale-X: 1.10;
+    -fx-scale-y: 1.05;
+}
+
+.adminLoginBtn:pressed{
+    /*-fx-background-color: lightgreen;*/
+    -fx-scale-y: .95;
+    -fx-scale-x: 1;
+}
+
+/*.adminLoginBtn:focused{*/
+/*    -fx-background-color: lightgreen;*/
+/*}*/
+
+/*.adminLoginBtn:selected{*/
+/*    -fx-background-color: lightgreen;*/
+/*}*/

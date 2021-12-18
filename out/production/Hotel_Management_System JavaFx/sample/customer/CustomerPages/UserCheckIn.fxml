@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="userCheckInPane" prefHeight="370.0" prefWidth="640.0" styleClass="bodybg" stylesheets="@CSS/imageSet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.customer.CustomerPages.UserCheckIn">
+   <children>
+      <Pane layoutX="53.0" layoutY="25.0" prefHeight="323.0" prefWidth="532.0" style="-fx-background-color: rgba(76, 75, 80, 0.4); -fx-background-radius: 25;">
+         <children>
+            <Label layoutX="282.0" layoutY="54.0" prefHeight="19.0" prefWidth="94.0" text="Room number:">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="283.0" layoutY="89.0" prefHeight="25.0" prefWidth="94.0" text="Room Type    :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="roomTypeField" layoutX="377.0" layoutY="89.0" prefHeight="25.0" prefWidth="130.0" text="       ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="283.0" layoutY="129.0" prefHeight="25.0" prefWidth="94.0" text="Capacity         :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="roomCapacityField" layoutX="377.0" layoutY="129.0" prefHeight="25.0" prefWidth="130.0" text="        ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="283.0" layoutY="172.0" prefHeight="25.0" prefWidth="94.0" text="Price/Day       :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="roomPriceField" layoutX="377.0" layoutY="172.0" prefHeight="25.0" prefWidth="130.0" text="        ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="27.0" prefHeight="25.0" prefWidth="69.0" text="Full Name:">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="UserNameField" layoutX="113.0" layoutY="27.0" prefHeight="25.0" prefWidth="130.0" text="    ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="66.0" prefHeight="25.0" prefWidth="69.0" text="NID No    :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="UserNIDField" layoutX="113.0" layoutY="66.0" prefHeight="25.0" prefWidth="130.0" text="       ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="108.0" prefHeight="25.0" prefWidth="69.0" text="Email       :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="UserEmailField" layoutX="113.0" layoutY="108.0" prefHeight="25.0" prefWidth="130.0" text="        ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="148.0" prefHeight="25.0" prefWidth="69.0" text="Phone      :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="UserPhoneField" layoutX="113.0" layoutY="148.0" prefHeight="25.0" prefWidth="130.0" text="          ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="191.0" prefHeight="25.0" prefWidth="69.0" text="Address   :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="UserAddressField" layoutX="113.0" layoutY="191.0" prefHeight="25.0" prefWidth="130.0" text="          ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="177.0" layoutY="228.0" prefHeight="19.0" prefWidth="94.0" text="Check in Date:">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="241.0" layoutY="272.0" onAction="#UserCheckInSubmitBtn" prefHeight="31.0" prefWidth="77.0" style="-fx-background-color: #82eeff; -fx-background-radius: 6; -fx-border-color: gray; -fx-border-radius: 6;" stylesheets="@CSS/userHomeButtonHover.css" text="Check-In" />
+            <JFXComboBox fx:id="userRoomChoicebox" labelFloat="true" layoutX="375.0" layoutY="50.0" prefHeight="25.0" prefWidth="86.0" styleClass="combo-box" />
+            <DatePicker fx:id="UserCheckIndate" layoutX="281.0" layoutY="224.0" prefHeight="25.0" prefWidth="133.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

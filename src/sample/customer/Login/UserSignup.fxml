@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../../imageSet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.customer.Login.UserSignup">
+   <children>
+      <ImageView fx:id="closeWindow" fitHeight="15.0" fitWidth="15.0" layoutX="566.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/exitIcon1.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="60.0" layoutY="44.0" prefHeight="313.0" prefWidth="480.0" style="-fx-background-color: rgba(76, 75, 80, 0.4); -fx-background-radius: 15;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="278.0" layoutY="265.0" onAction="#BackToUserLogin" prefHeight="25.0" prefWidth="60.0" ripplerFill="#82a1ff" style="-fx-background-color: #4A4A4A; -fx-background-radius: 6;" stylesheets="@../../buttonHover.css" text="Back" textFill="WHITE" />
+            <JFXTextField fx:id="CustomerPhoneField" focusColor="WHITE" labelFloat="true" layoutX="278.0" layoutY="96.0" prefHeight="25.0" prefWidth="149.0" promptText="Phone Number" unFocusColor="#63a6ff" />
+            <JFXTextField fx:id="CustomerNIDField" focusColor="WHITE" labelFloat="true" layoutX="54.0" layoutY="108.0" prefHeight="25.0" prefWidth="149.0" promptText="NID Number" unFocusColor="#63a6ff" />
+            <JFXTextField fx:id="CustomerPassField" focusColor="WHITE" labelFloat="true" layoutX="54.0" layoutY="159.0" prefHeight="25.0" prefWidth="149.0" promptText="Password" unFocusColor="#63a6ff" />
+            <JFXTextField fx:id="CustomerNameField" focusColor="WHITE" labelFloat="true" layoutX="54.0" layoutY="61.0" prefHeight="25.0" prefWidth="149.0" promptText="Full Name" unFocusColor="#63a6ff" />
+            <JFXTextField fx:id="CustomerEmailField" focusColor="WHITE" labelFloat="true" layoutX="54.0" layoutY="207.0" prefHeight="25.0" prefWidth="149.0" promptText="Email Address" unFocusColor="#63a6ff" />
+            <JFXTextArea fx:id="CustomerAddressField" focusColor="WHITE" labelFloat="true" layoutX="278.0" layoutY="152.0" prefHeight="64.0" prefWidth="149.0" promptText="Address" unFocusColor="#63a6ff" />
+            <JFXButton buttonType="RAISED" layoutX="143.0" layoutY="265.0" onAction="#UserSignUp" prefHeight="25.0" prefWidth="60.0" ripplerFill="#82a1ff" style="-fx-background-color: #82eeff; -fx-background-radius: 6;" stylesheets="@../../buttonHover.css" text="Sign-Up" />
+            <Text fill="WHITE" focusTraversable="true" layoutX="188.0" layoutY="32.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeType="INSIDE" text="User SignUp" wrappingWidth="137.13671875">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#00000096" />
+               </effect>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.customer.CustomerPages.CustomerInfo.UserInfo">
+   <children>
+      <Button layoutX="198.0" layoutY="251.0" mnemonicParsing="false" onAction="#UserInfoEdit" prefHeight="25.0" prefWidth="64.0" text="Edit" />
+      <Button fx:id="UserBackToHome" layoutX="309.0" layoutY="251.0" mnemonicParsing="false" onAction="#UserBackToHome" prefHeight="25.0" prefWidth="64.0" text="Close" />
+      <Label layoutX="65.0" layoutY="54.0" prefHeight="25.0" prefWidth="70.0" text="Full Name:">
+         <effect>
+            <DropShadow height="65.48" radius="30.7575" spread="0.02" width="59.55">
+               <color>
+                  <Color red="0.019999999552965164" green="0.017999999225139618" blue="0.017999999225139618" opacity="0.35652172565460205" />
+               </color>
+            </DropShadow>
+         </effect></Label>
+      <Label fx:id="UserNameLabel" layoutX="135.0" layoutY="54.0" prefHeight="25.0" prefWidth="149.0" style="-fx-background-radius: 10;" text="    ">
+         <effect>
+            <DropShadow height="65.48" radius="30.7575" spread="0.02" width="59.55">
+               <color>
+                  <Color red="0.019999999552965164" green="0.017999999225139618" blue="0.017999999225139618" opacity="0.35652172565460205" />
+               </color>
+            </DropShadow>
+         </effect></Label>
+      <Label layoutX="65.0" layoutY="102.0" prefHeight="25.0" prefWidth="70.0" text="NID No    :">
+         <effect>
+            <DropShadow height="65.48" radius="30.7575" spread="0.02" width="59.55">
+               <color>
+                  <Color red="0.019999999552965164" green="0.017999999225139618" blue="0.017999999225139618" opacity="0.35652172565460205" />
+               </color>
+            </DropShadow>
+         </effect></Label>
+      <Label fx:id="UserNIDlabel" layoutX="135.0" layoutY="102.0" prefHeight="25.0" prefWidth="149.0" style="-fx-background-radius: 10;" text="       ">
+         <effect>
+            <DropShadow height="65.48" radius="30.7575" spread="0.02" width="59.55">
+               <color>
+                  <Color red="0.019999999552965164" green="0.017999999225139618" blue="0.017999999225139618" opacity="0.35652172565460205" />
+               </color>
+            </DropShadow>
+         </effect></Label>
+      <Label layoutX="65.0" layoutY="144.0" prefHeight="25.0" prefWidth="70.0" text="Email       :">
+         <effect>
+            <DropShadow height="65.48" radius="30.7575" spread="0.02" width="59.55">
+               <color>
+                  <Color red="0.019999999552965164" green="0.017999999225139618" blue="0.017999999225139618" opacity="0.35652172565460205" />
+               </color>
+            </DropShadow>
+         </effect></Label>
+      <Label fx:id="UserEmailLabel" layoutX="135.0" layoutY="144.0" prefHeight="25.0" prefWidth="149.0" style="-fx-background-radius: 10;" text="        ">
+         <effect>
+            <DropShadow height="65.48" radius="30.7575" spread="0.02" width="59.55">
+               <color>
+                  <Color red="0.019999999552965164" green="0.017999999225139618" blue="0.017999999225139618" opacity="0.35652172565460205" />
+               </color>
+            </DropShadow>
+         </effect></Label>
+      <Label layoutX="65.0" layoutY="184.0" prefHeight="25.0" prefWidth="70.0" text="Phone     :">
+         <effect>
+            <DropShadow height="65.48" radius="30.7575" spread="0.02" width="59.55">
+               <color>
+                  <Color red="0.019999999552965164" green="0.017999999225139618" blue="0.017999999225139618" opacity="0.35652172565460205" />
+               </color>
+            </DropShadow>
+         </effect></Label>
+      <Label fx:id="UserPhoneLabel" layoutX="135.0" layoutY="184.0" prefHeight="25.0" prefWidth="149.0" style="-fx-background-radius: 10;" text="          ">
+         <effect>
+            <DropShadow height="65.48" radius="30.7575" spread="0.02" width="59.55">
+               <color>
+                  <Color red="0.019999999552965164" green="0.017999999225139618" blue="0.017999999225139618" opacity="0.35652172565460205" />
+               </color>
+            </DropShadow>
+         </effect></Label>
+      <Label layoutX="316.0" layoutY="89.0" prefHeight="25.0" prefWidth="70.0" text="Password :">
+         <effect>
+            <DropShadow height="65.48" radius="30.7575" spread="0.02" width="59.55">
+               <color>
+                  <Color red="0.019999999552965164" green="0.017999999225139618" blue="0.017999999225139618" opacity="0.35652172565460205" />
+               </color>
+            </DropShadow>
+         </effect></Label>
+      <Label fx:id="UserPasswordLabel" layoutX="386.0" layoutY="89.0" prefHeight="25.0" prefWidth="149.0" style="-fx-background-radius: 10;" text="           ">
+         <effect>
+            <DropShadow height="65.48" radius="30.7575" spread="0.02" width="59.55">
+               <color>
+                  <Color red="0.019999999552965164" green="0.017999999225139618" blue="0.017999999225139618" opacity="0.35652172565460205" />
+               </color>
+            </DropShadow>
+         </effect></Label>
+      <Label layoutX="317.0" layoutY="132.0" prefHeight="25.0" prefWidth="70.0" text="Address   :">
+         <effect>
+            <DropShadow height="65.48" radius="30.7575" spread="0.02" width="59.55">
+               <color>
+                  <Color red="0.019999999552965164" green="0.017999999225139618" blue="0.017999999225139618" opacity="0.35652172565460205" />
+               </color>
+            </DropShadow>
+         </effect></Label>
+      <Label fx:id="UserAddressLabel" alignment="TOP_LEFT" contentDisplay="TOP" layoutX="386.0" layoutY="137.0" prefHeight="65.0" prefWidth="149.0" style="-fx-background-radius: 10;">
+         <effect>
+            <DropShadow height="65.48" radius="30.7575" spread="0.02" width="59.55">
+               <color>
+                  <Color red="0.019999999552965164" green="0.017999999225139618" blue="0.017999999225139618" opacity="0.35652172565460205" />
+               </color>
+            </DropShadow>
+         </effect></Label>
+   </children>
+</AnchorPane>

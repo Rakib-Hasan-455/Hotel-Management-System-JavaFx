@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Hotel_Management_System JavaFx:jar">
+    <output-path>$PROJECT_DIR$</output-path>
+    <root id="archive" name="Hotel_Management_System JavaFx.jar">
+      <element id="module-output" name="Hotel_Management_System JavaFx" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/mysql-connector-java-8.0.26.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../2. Java_Learn/0 JAVAFX/fontawesomefx-8.9 - Copy.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jfoenix-8.0.10 - Copy.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

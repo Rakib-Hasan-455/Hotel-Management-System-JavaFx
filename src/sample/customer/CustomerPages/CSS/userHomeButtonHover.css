@@ -1,0 +1,19 @@
+.button{
+    -fx-background-color: white;
+}
+
+.button:hover{
+    -fx-background-color: Khaki;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.button:pressed{
+    -fx-background-color: white;
+    -fx-scale-x: 1.022;
+    -fx-scale-y: 1.022;
+}
+
+.button:focused{
+    -fx-background-color: white;
+}

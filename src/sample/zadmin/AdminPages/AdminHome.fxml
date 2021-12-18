@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="880.0" styleClass="bodybg" stylesheets="@CSS/imageSetAdmin.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.zadmin.AdminPages.AdminHome">
+   <children>
+      <Label layoutX="347.0" layoutY="193.0" text="Hey Admin,">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="325.0" layoutY="245.0" text="Welcome to Our">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="278.0" layoutY="295.0" text="Hotel Management System">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <JFXButton graphicTextGap="10.0" layoutX="731.0" layoutY="519.0" onAction="#BackToMain" prefHeight="34.0" prefWidth="94.0" text="Log-Out">
+         <graphic>
+            <FontAwesomeIconView glyphName="SIGN_OUT" size="15" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

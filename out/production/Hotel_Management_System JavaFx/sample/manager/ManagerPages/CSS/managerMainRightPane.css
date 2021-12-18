@@ -1,0 +1,33 @@
+.root{
+    -fx-pref-width: 160;
+    -fx-pref-height: 370;
+    -fx-background-color: #2E2C2F;
+}
+
+.buttonVbox{
+    -fx-pref-width: 160;
+    -fx-pref-height: 570;
+    -fx-padding: 15 0 0 15;
+    -fx-spacing: 15;
+}
+
+.button{
+    -fx-pref-width: 158;
+    -fx-pref-height: 58;
+    -fx-background-color: white;
+    -fx-background-radius: 30 0 0 30;
+    -fx-font-size: 13;
+    -fx-graphic-text-gap: 12;
+}
+
+.button:hover{
+    -fx-background-color: Khaki;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.button:focused{
+    -fx-background-color: lightgreen;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}

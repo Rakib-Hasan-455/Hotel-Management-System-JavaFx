@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="userMainPane" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.customer.CustomerPages.Usermain">
+   <children>
+      <JFXButton />
+      <BorderPane fx:id="borderpane" prefHeight="400.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane prefHeight="370.0" prefWidth="160.0" style="-fx-background-color: #25263A;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="TOP_RIGHT" layoutY="15.0" prefHeight="355.0" prefWidth="160.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="15.0">
+                     <children>
+                        <JFXButton fx:id="goHomeID" alignment="CENTER" graphicTextGap="12.0" onAction="#GoHome" prefHeight="58.0" prefWidth="138.0" stylesheets="@CSS/CustomerMainButtonStyle.css" text="Home">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="HOME" size="19" y="9.0" />
+                           </graphic>
+                           <padding>
+                              <Insets right="39.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton fx:id="roomDetailsID" alignment="CENTER" buttonType="RAISED" graphicTextGap="12.0" onAction="#GoRoomDetails" prefHeight="58.0" prefWidth="138.0" stylesheets="@CSS/CustomerMainButtonStyle.css" text="Room Details">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="SEARCH" size="19" />
+                           </graphic>
+                           <padding>
+                              <Insets right="-4.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton fx:id="checkInID" alignment="CENTER" buttonType="RAISED" graphicTextGap="12.0" onAction="#GoCheckIn" prefHeight="58.0" prefWidth="138.0" stylesheets="@CSS/CustomerMainButtonStyle.css" text="Check-In">
+                           <opaqueInsets>
+                              <Insets bottom="9.0" left="13.0" right="13.0" top="17.0" />
+                           </opaqueInsets>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="SIGN_IN" size="19" />
+                           </graphic>
+                           <padding>
+                              <Insets right="24.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton fx:id="checkInOutID" alignment="CENTER" buttonType="RAISED" graphicTextGap="12.0" onAction="#GoCheckDetails" prefHeight="58.0" prefWidth="138.0" stylesheets="@CSS/CustomerMainButtonStyle.css" text="Check History">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets bottom="9.0" left="13.0" right="13.0" top="17.0" />
+                           </opaqueInsets>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="HISTORY" size="19" />
+                           </graphic>
+                           <padding>
+                              <Insets right="-9.0" />
+                           </padding>
+                        </JFXButton>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+         <top>
+            <AnchorPane prefHeight="30.0" style="-fx-background-color: #E0E3EA;" stylesheets="@CSS/userMainTitleBarIcons.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="31.0" layoutY="3.0" opacity="0.87" style="-fx-font-size: 15; -fx-font-weight: bold;" text="Customer Dashboard" />
+                  <FontAwesomeIconView glyphName="USER" layoutX="10.0" layoutY="20.0" size="17" />
+                  <HBox alignment="CENTER" layoutX="700.0" layoutY="-1.0" prefHeight="30.0" prefWidth="100.0" spacing="10.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <FontAwesomeIconView fx:id="minimizeWindow" fill="#f5b63e" glyphName="CIRCLE" opacity="0.9" size="18" styleClass="minimizeIcon" />
+                        <FontAwesomeIconView fx:id="maximizeWindow" fill="#31c146" glyphName="CIRCLE" opacity="0.9" size="18" styleClass="maximizeIcon" />
+                        <FontAwesomeIconView fx:id="closeWindow" glyphName="CIRCLE" opacity="0.9" size="18" styleClass="closeIcon" />
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </top></BorderPane>
+   </children>
+</AnchorPane>

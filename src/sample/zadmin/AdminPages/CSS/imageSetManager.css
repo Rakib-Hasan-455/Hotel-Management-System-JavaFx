@@ -1,0 +1,127 @@
+.bodybg{
+    -fx-pref-height: 570;
+    -fx-pref-width: 840;
+    -fx-background-image:url('HMSHOME.jpg');
+    -fx-background-size: cover;
+}
+
+.jfx-text-field .label{
+    -fx-prompt-text-fill: #ffffff;
+    -fx-text-fill: #ffffff;
+}
+
+.jfx-text-field {
+    -fx-prompt-text-fill: #ffffff;
+    -fx-text-fill: #ffffff;
+}
+
+
+
+.searchBox{
+    -fx-prompt-text-fill: #ffffff;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 10;
+    -fx-background-color: gray;
+}
+
+.jfx-text-area{
+    -fx-prompt-text-fill: #ffffff;
+    -fx-text-fill: #ffffff;
+}
+
+.jfx-password-field {
+    -fx-prompt-text-fill: #ffffff;
+    -fx-text-fill: #ffffff;
+}
+
+.label{
+    -fx-text-fill: #ffffff;
+}
+
+.combo-box{
+    -fx-background-color: white;
+}
+
+.combo-box .label{
+    -fx-text-fill: black;
+}
+
+.date-picker{
+    -fx-background-color: white;
+}
+
+.date-picker .label{
+    -fx-text-fill: black;
+}
+
+.choice-box .label{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+
+.table-view{
+    -fx-background-color: transparent;
+    -fx-background-radius: 30;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: #242737;
+    -fx-background-radius: 30;
+    -fx-background-insets:  0 0 10 0;
+    -fx-padding: 0 0 10 0;
+    -fx-effect: dropshadow(two-pass-box, #ff9a9a, 8, 0, 0, 6);
+}
+
+.table-view .column-header, table-view .filler{
+    -fx-size: 40;
+    -fx-border-width: 0 0 3 0;
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header .label{
+    -fx-text-fill: white;
+}
+
+/*.table-view .table-view-cell:odd{*/
+/*    -fx-background-color: rgb(166, 244, 253);*/
+/*    -fx-background-insets:  0 0 1 0;*/
+/*}*/
+
+/*.table-view .table-view-cell:even{*/
+/*    -fx-background-color: rgb(253, 154, 154);*/
+/*    -fx-background-insets: 0 0 1 0;*/
+/*}*/
+.table-view .label{
+    -fx-text-fill: black;
+}
+
+
+.table-row-cell {
+    -fx-background-color: #24273770;
+    -fx-font-weight:bold;
+    -fx-text-fill: whitesmoke;
+}
+
+
+
+.table-row-cell{
+    -fx-text-fill: whitesmoke;
+}
+
+.table-row-cell:even{
+    -fx-background-color: #80808070;
+}
+.table-column {
+    -fx-alignment: CENTER;
+    -fx-text-fill: whitesmoke;
+}
+
+.button{
+    -fx-background-color: white;
+}
+
+.button:hover{
+    -fx-background-color: Khaki;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}

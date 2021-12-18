@@ -1,0 +1,31 @@
+.root {
+    -fx-background-image:url('HMSHOME.jpg');
+    -fx-background-size: cover;
+}
+
+.jfx-text-field {
+-fx-prompt-text-fill: #ffffff;
+-fx-text-fill: #ffffff;
+}
+
+.jfx-text-area{
+    -fx-prompt-text-fill: #ffffff;
+    -fx-text-fill: #ffffff;
+}
+
+.jfx-password-field {
+-fx-prompt-text-fill: #ffffff;
+-fx-text-fill: #ffffff;
+}
+
+.closeWindow:hover{
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
+    -fx-opacity: 1
+}
+
+.closeWindow:pressed{
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+    -fx-opacity: 1
+}

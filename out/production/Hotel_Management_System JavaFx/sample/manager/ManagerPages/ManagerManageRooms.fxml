@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="670.0" styleClass="bodybg" stylesheets="@CSS/imageSetManager.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.manager.ManagerPages.ManagerManageRooms">
+   <children>
+      <Pane layoutX="21.0" layoutY="12.0" prefHeight="168.0" prefWidth="598.0" style="-fx-background-color: rgba(76, 75, 80, 0.4); -fx-background-radius: 25;" />
+      <Label layoutX="274.0" layoutY="14.0" text="Add Rooms">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="446.0" layoutY="57.0" prefHeight="17.0" prefWidth="103.0" text="Room Status:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="roomTable" layoutX="8.0" layoutY="234.0" prefHeight="316.0" prefWidth="618.0">
+        <columns>
+          <TableColumn fx:id="roomNoCol" prefWidth="89.0" text="Room No" />
+          <TableColumn fx:id="roomTypeCol" prefWidth="109.0" text="Room Type" />
+            <TableColumn fx:id="roomCapacityCol" prefWidth="90.0" text="Capacity" />
+            <TableColumn fx:id="price_DayCol" prefWidth="100.0" text="Price/Day" />
+            <TableColumn fx:id="roomStatusCol" prefWidth="110.0" text="Status" />
+            <TableColumn prefWidth="118.0" text="Action" />
+        </columns>
+      </TableView>
+      <TextField layoutX="236.0" layoutY="195.0" promptText="Search Room" styleClass="searchBox" />
+      <JFXButton layoutX="289.0" layoutY="145.0" onAction="#addRoom" prefHeight="26.0" prefWidth="62.0" text="Add" />
+      <JFXComboBox fx:id="roomStatusChoiceBox" layoutX="446.0" layoutY="88.0" prefHeight="25.0" prefWidth="123.0" />
+      <JFXTextField fx:id="roomNoField" focusColor="#76ff9d" labelFloat="true" layoutX="44.0" layoutY="59.0" prefHeight="25.0" prefWidth="149.0" promptText="Room Number" unFocusColor="#9ef2ff" />
+      <JFXTextField fx:id="roomTypeField" focusColor="#76ff9d" labelFloat="true" layoutX="246.0" layoutY="58.0" prefHeight="25.0" prefWidth="149.0" promptText="Room Type" unFocusColor="#9ef2ff" />
+      <JFXTextField fx:id="bedCapacityField" focusColor="#76ff9d" labelFloat="true" layoutX="44.0" layoutY="106.0" prefHeight="25.0" prefWidth="149.0" promptText="Bed Capacity" unFocusColor="#9ef2ff" />
+      <JFXTextField fx:id="price_dayField" focusColor="#76ff9d" labelFloat="true" layoutX="246.0" layoutY="106.0" prefHeight="25.0" prefWidth="149.0" promptText="Price/Day" unFocusColor="#9ef2ff" />
+   </children>
+</AnchorPane>

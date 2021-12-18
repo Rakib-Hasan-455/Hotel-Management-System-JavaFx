@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.manager.ManagerPages.ManagerInfo.ManagerInfo">
+   <children>
+      <Button fx:id="CloseButton" layoutX="265.0" layoutY="284.0" mnemonicParsing="false" onAction="#CloseWindow" prefHeight="25.0" prefWidth="64.0" text="Close" />
+      <Label layoutX="152.0" layoutY="48.0" prefHeight="25.0" prefWidth="70.0" text="Full Name:" />
+      <Label fx:id="UserNameLabel" layoutX="222.0" layoutY="48.0" prefHeight="25.0" prefWidth="149.0" text="    " />
+      <Label layoutX="152.0" layoutY="96.0" prefHeight="25.0" prefWidth="70.0" text="NID No    :" />
+      <Label fx:id="UserNIDlabel" layoutX="222.0" layoutY="96.0" prefHeight="25.0" prefWidth="149.0" text="       " />
+      <Label layoutX="152.0" layoutY="138.0" prefHeight="25.0" prefWidth="70.0" text="Email       :" />
+      <Label fx:id="UserEmailLabel" layoutX="222.0" layoutY="138.0" prefHeight="25.0" prefWidth="149.0" text="        " />
+      <Label layoutX="152.0" layoutY="178.0" prefHeight="25.0" prefWidth="70.0" text="Phone     :" />
+      <Label fx:id="UserPhoneLabel" layoutX="222.0" layoutY="178.0" prefHeight="25.0" prefWidth="149.0" text="          " />
+      <Label layoutX="152.0" layoutY="218.0" prefHeight="25.0" prefWidth="70.0" text="Address   :" />
+      <Label fx:id="UserAddressLabel" layoutX="222.0" layoutY="218.0" prefHeight="66.0" prefWidth="149.0" text="            " />
+   </children>
+</AnchorPane>

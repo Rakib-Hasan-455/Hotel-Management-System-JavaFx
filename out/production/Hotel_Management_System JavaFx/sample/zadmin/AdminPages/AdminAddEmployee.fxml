@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="880.0" styleClass="bodybg" stylesheets="@CSS/imageSetAdmin.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.zadmin.AdminPages.AdminAddEmployee">
+   <children>
+      <Pane layoutX="196.0" layoutY="36.0" prefHeight="451.0" prefWidth="450.0" style="-fx-background-color: rgba(76, 75, 80, 0.4); -fx-background-radius: 25;" />
+      <Label layoutX="241.0" layoutY="114.0" prefHeight="25.0" prefWidth="110.0" text="Full Name        :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="241.0" layoutY="164.0" prefHeight="25.0" prefWidth="110.0" text="Email               :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="241.0" layoutY="212.0" prefHeight="25.0" prefWidth="110.0" text="Phone No        :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="241.0" layoutY="257.0" prefHeight="25.0" prefWidth="110.0" text="Home Address :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="241.0" layoutY="303.0" prefHeight="25.0" prefWidth="110.0" text="Employee NID :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="241.0" layoutY="354.0" prefHeight="25.0" prefWidth="110.0" text="Hotel Password:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="348.0" layoutY="59.0" text="Employee Details">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="360.0" layoutY="412.0" onAction="#CreateEmployee" prefHeight="40.0" prefWidth="137.0" style="-fx-background-color: #82eeff; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: gray;" text="Create Employee">
+         <font>
+            <Font size="14.0" />
+         </font></JFXButton>
+      <JFXTextField fx:id="EmployeeNameField" focusColor="#8cffba" layoutX="374.0" layoutY="108.0" prefHeight="31.0" prefWidth="206.0" promptText="Employee Name" unFocusColor="#a6fbff">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="EmployeeEmailField" focusColor="#8cffba" layoutX="374.0" layoutY="161.0" prefHeight="31.0" prefWidth="206.0" promptText="Email" unFocusColor="#a6fbff">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="EmployeePhoneField" focusColor="#8cffba" layoutX="374.0" layoutY="209.0" prefHeight="31.0" prefWidth="206.0" promptText="Phone" unFocusColor="#a6fbff">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="EmployeeAddressField" focusColor="#8cffba" layoutX="374.0" layoutY="254.0" prefHeight="31.0" prefWidth="206.0" promptText="Home Address" unFocusColor="#a6fbff">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="EmployeeNIDField" focusColor="#8cffba" layoutX="374.0" layoutY="300.0" prefHeight="31.0" prefWidth="206.0" promptText="Employee NID" unFocusColor="#a6fbff">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="EmployeePassField" focusColor="#8cffba" layoutX="374.0" layoutY="351.0" prefHeight="31.0" prefWidth="206.0" promptText="Hotel Managing Password" unFocusColor="#a6fbff">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

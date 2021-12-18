@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.zadmin.AdminPages.AdminMain">
+   <children>
+      <JFXButton />
+      <BorderPane fx:id="borderpane" prefHeight="600.0" prefWidth="1000.0">
+         <left>
+            <AnchorPane prefHeight="570.0" prefWidth="140.0" styleClass="root" stylesheets="@CSS/adminMainRightPane.css" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="569.0" prefWidth="140.0" styleClass="buttonVbox">
+                     <children>
+                        <JFXButton onAction="#AdminHome" prefHeight="25.0" prefWidth="140.0" text="Home">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="HOME" size="19" />
+                           </graphic>
+                           <padding>
+                              <Insets right="44.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton layoutX="10.0" layoutY="10.0" onAction="#AddEmployee" prefHeight="25.0" prefWidth="140.0" text="Add Employee">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="USER_PLUS" size="19" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton layoutX="10.0" layoutY="35.0" onAction="#AdminEmployeeInfo" prefHeight="25.0" prefWidth="140.0" text="Employee Info">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="GITHUB_ALT" size="19" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton layoutX="10.0" layoutY="60.0" onAction="#AdminCustomerInfo" prefHeight="25.0" prefWidth="140.0" text="Customer Info">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="USERS" size="19" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton layoutX="10.0" layoutY="85.0" onAction="#AdminEarnLog" prefHeight="25.0" prefWidth="140.0" text="Earning Log">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="BALANCE_SCALE" size="19" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton layoutX="10.0" layoutY="110.0" onAction="#AdminTotalEarnings" prefHeight="25.0" prefWidth="140.0" text="Total Earnings">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="USD" size="19" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+         <top>
+            <AnchorPane prefHeight="30.0" prefWidth="1000.0" styleClass="root" stylesheets="@CSS/adminMainTitlebarPane.css" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" styleClass="titlePane">
+                     <children>
+                        <FontAwesomeIconView glyphName="USER_SECRET" styleClass="titleIcon" />
+                        <Label styleClass="titleText" text="Admin Dashboard" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="900.0" prefHeight="100.0" prefWidth="200.0" styleClass="closePane">
+                     <children>
+                        <FontAwesomeIconView glyphName="CIRCLE" size="18" styleClass="minimizeIcon" />
+                        <FontAwesomeIconView glyphName="CIRCLE" layoutX="54.0" layoutY="29.0" size="18" styleClass="maximizeIcon" />
+                        <FontAwesomeIconView glyphName="CIRCLE" layoutX="65.0" layoutY="29.0" size="18" styleClass="closeIcon" />
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

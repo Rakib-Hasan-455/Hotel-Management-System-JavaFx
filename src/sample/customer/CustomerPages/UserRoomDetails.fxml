@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="370.0" prefWidth="640.0" styleClass="bodybg" stylesheets="@CSS/imageSet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.customer.CustomerPages.UserRoomDetails">
+   <children>
+      <TableView fx:id="roomTable" layoutX="19.0" layoutY="59.0" prefHeight="294.0" prefWidth="608.0">
+        <columns>
+          <TableColumn fx:id="roomNoCol" prefWidth="124.0" text="Room No" />
+          <TableColumn fx:id="roomTypeCol" prefWidth="108.0" text="Type" />
+            <TableColumn fx:id="roomCapacityCol" prefWidth="113.0" text="Capacity" />
+            <TableColumn fx:id="price_DayCol" prefWidth="122.0" text="Price/Day" />
+            <TableColumn fx:id="roomStatusCol" minWidth="0.0" prefWidth="139.0" text="Room Status" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="218.0" layoutY="18.0" prefHeight="25.0" prefWidth="193.0">
+         <children>
+            <TextField fx:id="UserSearchRoomStatus" layoutY="2.0" prefHeight="25.0" prefWidth="193.0" promptText="Search Anything" styleClass="searchBox">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="29.0" />
+               </padding>
+            </TextField>
+            <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" layoutX="10.0" layoutY="19.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

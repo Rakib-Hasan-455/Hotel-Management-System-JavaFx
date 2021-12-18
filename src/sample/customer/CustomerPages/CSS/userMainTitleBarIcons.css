@@ -1,0 +1,50 @@
+.closeIcon{
+    -fx-fill: #f45450;
+    -fx-stroke: #f83632;
+}
+
+.closeIcon:hover{
+    -fx-stroke: gray;
+    -fx-scale-x: 1.09;
+    -fx-scale-y: 1.09;
+    -fx-opacity: 1;
+}
+
+.closeIcon:pressed{
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+}
+
+.minimizeIcon{
+    -fx-fill: #f5b63e;
+    -fx-stroke: #ef9f0a;
+}
+
+.minimizeIcon:hover{
+    -fx-stroke: gray;
+    -fx-scale-x: 1.09;
+    -fx-scale-y: 1.09;
+    -fx-opacity: 1;
+}
+
+.minimizeIcon:pressed{
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+}
+
+  .maximizeIcon{
+      -fx-fill: #31c146;
+      -fx-stroke: #00b11b;
+  }
+
+.maximizeIcon:hover{
+    -fx-stroke: gray;
+    -fx-scale-x: 1.09;
+    -fx-scale-y: 1.09;
+    -fx-opacity: 1;
+}
+
+.maximizeIcon:pressed{
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+}

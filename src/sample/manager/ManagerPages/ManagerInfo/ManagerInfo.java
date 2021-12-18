@@ -5,13 +5,10 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 public class ManagerInfo {
-    public Button CloseButton;
     public Button CloseWindow;
 
     public void CloseWindow(ActionEvent actionEvent) {
-// get a handle to the stage
-        Stage stage = (Stage)CloseButton.getScene().getWindow();
-        // do what you have to do
+        Stage stage = (Stage)CloseWindow.getScene().getWindow();
         stage.close();
     }
 }

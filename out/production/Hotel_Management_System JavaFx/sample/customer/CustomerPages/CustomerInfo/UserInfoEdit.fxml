@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.paint.Color?>
 
-<AnchorPane prefHeight="400.0" prefWidth="550.0" style="-fx-background-radius: 25;" styleClass="bodybg" stylesheets="@../CSS/imageSet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.customer.CustomerPages.CustomerInfo.UserInfoEdit">
+<AnchorPane prefHeight="400.0" prefWidth="550.0" styleClass="bodybg" stylesheets="@../CSS/imageSet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.customer.CustomerPages.CustomerInfo.UserInfoEdit">
    <children>
       <AnchorPane layoutX="22.0" layoutY="64.0" prefHeight="285.0" prefWidth="500.0" style="-fx-background-color: rgba(76, 75, 80, 0.4); -fx-background-radius: 25;">
          <children>

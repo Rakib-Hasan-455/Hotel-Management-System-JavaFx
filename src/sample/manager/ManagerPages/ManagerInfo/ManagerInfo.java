@@ -6,6 +6,7 @@ import javafx.stage.Stage;
 
 public class ManagerInfo {
     public Button CloseButton;
+    public Button CloseWindow;
 
     public void CloseWindow(ActionEvent actionEvent) {
 // get a handle to the stage

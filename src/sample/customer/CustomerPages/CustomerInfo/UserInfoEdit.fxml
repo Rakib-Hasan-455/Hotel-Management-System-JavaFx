@@ -23,7 +23,7 @@
                   </DropShadow>
                </effect>
             </Button>
-            <Label layoutX="9.0" layoutY="9.0" prefHeight="25.0" prefWidth="70.0" text="Full Name:">
+            <Label layoutX="29.0" layoutY="30.0" prefHeight="25.0" prefWidth="70.0" text="Full Name:">
                <effect>
                   <DropShadow>
                      <color>
@@ -32,7 +32,7 @@
                   </DropShadow>
                </effect>
             </Label>
-            <Label layoutX="9.0" layoutY="57.0" prefHeight="25.0" prefWidth="70.0" text="NID No    :">
+            <Label layoutX="29.0" layoutY="78.0" prefHeight="25.0" prefWidth="70.0" text="NID No    :">
                <effect>
                   <DropShadow>
                      <color>
@@ -41,7 +41,7 @@
                   </DropShadow>
                </effect>
             </Label>
-            <Label layoutX="9.0" layoutY="99.0" prefHeight="25.0" prefWidth="70.0" text="Email       :">
+            <Label layoutX="29.0" layoutY="120.0" prefHeight="25.0" prefWidth="70.0" text="Email       :">
                <effect>
                   <DropShadow>
                      <color>
@@ -50,7 +50,7 @@
                   </DropShadow>
                </effect>
             </Label>
-            <Label layoutX="9.0" layoutY="139.0" prefHeight="25.0" prefWidth="70.0" text="Phone     :">
+            <Label layoutX="29.0" layoutY="160.0" prefHeight="25.0" prefWidth="70.0" text="Phone     :">
                <effect>
                   <DropShadow>
                      <color>
@@ -59,7 +59,7 @@
                   </DropShadow>
                </effect>
             </Label>
-            <Label layoutX="260.0" layoutY="44.0" prefHeight="25.0" prefWidth="70.0" text="Password :">
+            <Label layoutX="280.0" layoutY="65.0" prefHeight="25.0" prefWidth="70.0" text="Password :">
                <effect>
                   <DropShadow>
                      <color>
@@ -68,7 +68,7 @@
                   </DropShadow>
                </effect>
             </Label>
-            <Label layoutX="261.0" layoutY="87.0" prefHeight="25.0" prefWidth="70.0" text="Address   :">
+            <Label layoutX="281.0" layoutY="108.0" prefHeight="25.0" prefWidth="70.0" text="Address   :">
                <effect>
                   <DropShadow>
                      <color>
@@ -77,7 +77,7 @@
                   </DropShadow>
                </effect>
             </Label>
-            <TextField fx:id="UserNameEdit" layoutX="79.0" layoutY="9.0" style="-fx-background-radius: 10;">
+            <TextField fx:id="UserNameEdit" layoutX="99.0" layoutY="30.0" style="-fx-background-radius: 10;">
                <effect>
                   <DropShadow>
                      <color>
@@ -86,7 +86,7 @@
                   </DropShadow>
                </effect>
             </TextField>
-            <TextField fx:id="UserNidEdit" layoutX="79.0" layoutY="57.0" style="-fx-background-radius: 10;">
+            <TextField fx:id="UserNidEdit" layoutX="99.0" layoutY="78.0" style="-fx-background-radius: 10;">
                <effect>
                   <DropShadow>
                      <color>
@@ -95,7 +95,7 @@
                   </DropShadow>
                </effect>
             </TextField>
-            <TextField fx:id="UserEmailEdit" layoutX="79.0" layoutY="99.0" style="-fx-background-radius: 10;">
+            <TextField fx:id="UserEmailEdit" layoutX="99.0" layoutY="120.0" style="-fx-background-radius: 10;">
                <effect>
                   <DropShadow>
                      <color>
@@ -104,7 +104,7 @@
                   </DropShadow>
                </effect>
             </TextField>
-            <TextField fx:id="UserPhoneEdit" layoutX="79.0" layoutY="139.0" style="-fx-background-radius: 10;">
+            <TextField fx:id="UserPhoneEdit" layoutX="99.0" layoutY="160.0" style="-fx-background-radius: 10;">
                <effect>
                   <DropShadow>
                      <color>
@@ -113,7 +113,7 @@
                   </DropShadow>
                </effect>
             </TextField>
-            <TextField fx:id="UserPassEdit" layoutX="330.0" layoutY="44.0" style="-fx-background-radius: 10;">
+            <TextField fx:id="UserPassEdit" layoutX="350.0" layoutY="65.0" style="-fx-background-radius: 10;">
                <effect>
                   <DropShadow>
                      <color>
@@ -122,7 +122,7 @@
                   </DropShadow>
                </effect>
             </TextField>
-            <TextArea fx:id="UserAddressEdit" layoutX="331.0" layoutY="87.0" prefHeight="77.0" prefWidth="149.0">
+            <TextArea fx:id="UserAddressEdit" layoutX="351.0" layoutY="108.0" prefHeight="77.0" prefWidth="149.0">
                <effect>
                   <DropShadow>
                      <color>

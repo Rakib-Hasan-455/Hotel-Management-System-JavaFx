@@ -3,6 +3,10 @@
      -fx-background-size: cover;
  }
 
+.transPane{
+    -fx-background-color:rgba(76, 75, 80, 0.4);
+}
+
 .jfx-text-field .label{
     -fx-prompt-text-fill: #ffffff;
     -fx-text-fill: #ffffff;

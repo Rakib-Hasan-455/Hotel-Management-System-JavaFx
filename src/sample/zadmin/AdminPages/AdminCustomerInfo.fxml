@@ -12,11 +12,11 @@
         <columns>
           <TableColumn fx:id="nidCol" prefWidth="94.0" text="Customer NID" />
           <TableColumn fx:id="nameCol" prefWidth="91.0" text="Name" />
-            <TableColumn fx:id="emailCol" prefWidth="108.0" text="Email" />
-            <TableColumn fx:id="phoneCol" prefWidth="111.0" text="Phone" />
-            <TableColumn fx:id="addressCol" prefWidth="124.0" text="Address" />
-            <TableColumn fx:id="passCol" prefWidth="129.0" text="Password" />
-            <TableColumn prefWidth="146.0" text="Action" />
+            <TableColumn fx:id="emailCol" prefWidth="147.0" text="Email" />
+            <TableColumn fx:id="phoneCol" prefWidth="99.0" text="Phone" />
+            <TableColumn fx:id="addressCol" prefWidth="120.0" text="Address" />
+            <TableColumn fx:id="passCol" prefWidth="133.0" text="Password" />
+            <TableColumn fx:id="actionCol" prefWidth="119.0" text="Action" />
         </columns>
       </TableView>
    </children>

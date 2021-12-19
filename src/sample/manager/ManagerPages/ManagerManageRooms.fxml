@@ -31,7 +31,7 @@
             <TableColumn fx:id="roomCapacityCol" prefWidth="90.0" text="Capacity" />
             <TableColumn fx:id="price_DayCol" prefWidth="100.0" text="Price/Day" />
             <TableColumn fx:id="roomStatusCol" prefWidth="110.0" text="Status" />
-            <TableColumn prefWidth="118.0" text="Action" />
+            <TableColumn fx:id="actionCol" prefWidth="118.0" text="Action" />
         </columns>
       </TableView>
       <TextField layoutX="236.0" layoutY="195.0" promptText="Search Room" styleClass="searchBox" />

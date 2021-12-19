@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXTextArea?>
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -14,7 +15,7 @@
    <children>
       <AnchorPane layoutX="22.0" layoutY="64.0" prefHeight="285.0" prefWidth="500.0" style="-fx-background-color: rgba(76, 75, 80, 0.4); -fx-background-radius: 25;">
          <children>
-            <Button fx:id="UserConfirm" layoutX="228.0" layoutY="207.0" mnemonicParsing="false" onAction="#UserConfirmEdit" prefHeight="25.0" prefWidth="64.0" text="Confirm">
+            <Button fx:id="UserConfirm" layoutX="162.0" layoutY="227.0" mnemonicParsing="false" onAction="#UserConfirmEdit" prefHeight="25.0" prefWidth="64.0" text="Confirm">
                <effect>
                   <DropShadow>
                      <color>
@@ -77,7 +78,7 @@
                   </DropShadow>
                </effect>
             </Label>
-            <TextField fx:id="UserNameEdit" layoutX="99.0" layoutY="30.0" style="-fx-background-radius: 10;">
+            <TextField fx:id="UserNameEdit" layoutX="99.0" layoutY="30.0" style="-fx-text-fill: white; -fx-background-color: #7f8fa650; -fx-background-radius: 7;">
                <effect>
                   <DropShadow>
                      <color>
@@ -86,7 +87,7 @@
                   </DropShadow>
                </effect>
             </TextField>
-            <TextField fx:id="UserNidEdit" layoutX="99.0" layoutY="78.0" style="-fx-background-radius: 10;">
+            <TextField fx:id="UserNidEdit" layoutX="99.0" layoutY="78.0" style="-fx-text-fill: white; -fx-background-color: #7f8fa650; -fx-background-radius: 7;">
                <effect>
                   <DropShadow>
                      <color>
@@ -95,7 +96,7 @@
                   </DropShadow>
                </effect>
             </TextField>
-            <TextField fx:id="UserEmailEdit" layoutX="99.0" layoutY="120.0" style="-fx-background-radius: 10;">
+            <TextField fx:id="UserEmailEdit" layoutX="99.0" layoutY="120.0" style="-fx-text-fill: white; -fx-background-color: #7f8fa650; -fx-background-radius: 7;">
                <effect>
                   <DropShadow>
                      <color>
@@ -104,7 +105,7 @@
                   </DropShadow>
                </effect>
             </TextField>
-            <TextField fx:id="UserPhoneEdit" layoutX="99.0" layoutY="160.0" style="-fx-background-radius: 10;">
+            <TextField fx:id="UserPhoneEdit" layoutX="99.0" layoutY="160.0" style="-fx-text-fill: white; -fx-background-color: #7f8fa650; -fx-background-radius: 7;">
                <effect>
                   <DropShadow>
                      <color>
@@ -113,7 +114,7 @@
                   </DropShadow>
                </effect>
             </TextField>
-            <TextField fx:id="UserPassEdit" layoutX="350.0" layoutY="65.0" style="-fx-background-radius: 10;">
+            <TextField fx:id="UserPassEdit" layoutX="350.0" layoutY="65.0" style="-fx-text-fill: white; -fx-background-color: #7f8fa650; -fx-background-radius: 7;">
                <effect>
                   <DropShadow>
                      <color>
@@ -122,15 +123,19 @@
                   </DropShadow>
                </effect>
             </TextField>
-            <TextArea fx:id="UserAddressEdit" layoutX="351.0" layoutY="108.0" prefHeight="77.0" prefWidth="149.0">
+            <JFXTextArea fx:id="UserAddressEdit" layoutX="350.0" layoutY="108.0" prefHeight="77.0" prefWidth="149.0">
+               <padding>
+                  <Insets left="6.0" />
+               </padding></JFXTextArea>
+            <Button layoutX="292.0" layoutY="227.0" mnemonicParsing="false" onAction="#BackBtn" prefHeight="25.0" prefWidth="64.0" text="Back">
                <effect>
                   <DropShadow>
                      <color>
-                        <Color opacity="0.05652173236012459" />
+                        <Color opacity="0.22608695924282074" />
                      </color>
                   </DropShadow>
                </effect>
-            </TextArea>
+            </Button>
          </children>
       </AnchorPane>
       <AnchorPane styleClass="titlePane" stylesheets="@../CSS/customerMainTitlebarPane.css">

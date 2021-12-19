@@ -1,13 +1,18 @@
 package sample.manager.ManagerPages;
 
+import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
+import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.HBox;
+import javafx.util.Callback;
 import sample._BackEnd.TableView.ManagerCheckOutTable;
-import sample._BackEnd.TableView.ManagerRoomTable;
 
 import java.net.URL;
 import java.sql.Connection;
@@ -45,6 +50,7 @@ public class ManagerCheckOutDetails implements Initializable {
         //slipCol.setCellValueFactory(new PropertyValueFactory<ManagerCheckOutTable, String>("nid"));
 
         showCheckInOutInfo();
+        slipDownloadBtn();
     }
 
     public void showCheckInOutInfo(){
@@ -76,4 +82,81 @@ public class ManagerCheckOutDetails implements Initializable {
             closeConnections();
         }
     }
+
+    private void slipDownloadBtn() {
+        Callback<TableColumn<ManagerCheckOutTable, String>, TableCell<ManagerCheckOutTable, String>> cellCallback =
+                new Callback<TableColumn<ManagerCheckOutTable, String>, TableCell<ManagerCheckOutTable, String>>() {
+                    @Override
+                    public TableCell<ManagerCheckOutTable, String> call(TableColumn<ManagerCheckOutTable, String> param) {
+
+                        TableCell<ManagerCheckOutTable, String> cell = new TableCell<ManagerCheckOutTable, String>() {
+
+                            FontAwesomeIconView downloadIcon = new FontAwesomeIconView(FontAwesomeIcon.DOWNLOAD);
+
+                            public HBox hBox = new HBox(downloadIcon);
+
+                            @Override
+                            protected void updateItem(String item, boolean empty) {
+                                super.updateItem(item, empty);
+                                if (empty){
+                                    setGraphic(null);
+                                    setText(null);
+                                }else{
+
+                                    downloadIcon.setStyle(
+                                            " -fx-cursor: hand ;"
+                                                    + "-glyph-size:20px;"
+                                                    + "-fx-fill:#ffffff;"
+                                    );
+
+                                    downloadIcon.setOnMouseEntered((MouseEvent event) ->{
+                                        downloadIcon.setStyle(
+                                                " -fx-cursor: hand ;"
+                                                        +
+                                                        "-glyph-size:20px;"
+                                                        +"-fx-fill:khaki;"
+                                        );
+                                    });
+
+                                    downloadIcon.setOnMouseExited((MouseEvent event2) ->{
+                                        downloadIcon.setStyle(
+                                                " -fx-cursor: hand ;"
+                                                        +
+                                                        "-glyph-size:20px;"
+                                                        + "-fx-fill:white;"
+                                        );
+                                    });
+
+                                    downloadIcon.setOnMouseClicked((MouseEvent event2) ->{
+                                        downloadIcon.setStyle(
+                                                " -fx-cursor: hand ;"
+                                                        +
+                                                        "-glyph-size:20px;"
+                                                        +"-fx-fill:lightgreen;"
+                                        );
+
+                                        //PDF generate function
+
+                                    });
+
+//                                    downloadIcon.setOnMouseClicked((MouseEvent event)->{
+//
+//                                    });
+
+                                    hBox.setStyle("-fx-alignment:center");
+                                    hBox.setMaxWidth(40);
+//                                    HBox.setMargin(download, new Insets(2, 7, 0, 2));
+//                                    HBox.setMargin(download, new Insets(2, 2, 0, 7));
+                                    setGraphic(hBox);
+                                }
+                            }
+                        };
+
+                        return cell;
+                    }
+                };
+        slipCol.setCellFactory(cellCallback);
+    }
+
+
 }

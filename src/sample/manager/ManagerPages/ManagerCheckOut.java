@@ -8,12 +8,10 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
-import sample.Main;
 import sample._BackEnd.CommonTask;
 import sample._BackEnd.DBConnection;
 import sample._BackEnd.TableView.ManagerCheckInDetailsTable;
 import sample._BackEnd.TableView.ManagerCheckOutTable;
-import sample._BackEnd.TableView.ManagerCustomerTable;
 
 import java.net.URL;
 import java.sql.Connection;
@@ -24,8 +22,6 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeFormatterBuilder;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.ResourceBundle;
 

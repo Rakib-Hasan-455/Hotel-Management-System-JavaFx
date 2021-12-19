@@ -91,6 +91,7 @@ public class UserCheckIn implements Initializable {
                 DBConnection.closeConnections();
             }
         }
+        updateChoiceBox();
     }
 
 

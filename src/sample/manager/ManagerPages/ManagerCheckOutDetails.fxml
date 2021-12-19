@@ -17,7 +17,7 @@
             <TableColumn fx:id="checkedOutCol" prefWidth="88.0" text="Checked Out" />
             <TableColumn fx:id="priceDayCol" prefWidth="71.0" text="Price/Day" />
             <TableColumn fx:id="totalPriceCol" prefWidth="79.0" text="Total Price" />
-            <TableColumn fx:id="slipCol" prefWidth="70.0" text="Slip" />
+            <TableColumn fx:id="slipCol" maxWidth="70.0" prefWidth="70.0" resizable="false" text="Slip" />
         </columns>
       </TableView>
    </children>

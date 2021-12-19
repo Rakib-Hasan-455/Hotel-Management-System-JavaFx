@@ -113,4 +113,8 @@ public class UserInfoEdit implements Initializable {
             DBConnection.closeConnections();
         }
     }
+
+    public void BackBtn(ActionEvent event) throws IOException {
+        CommonTask.pageNavigation("UserInfo.fxml", (Stage) UserConfirm.getScene().getWindow(),this.getClass(),"User Home", 550, 400);
+    }
 }

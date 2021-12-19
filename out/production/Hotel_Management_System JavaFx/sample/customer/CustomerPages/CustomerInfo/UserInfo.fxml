@@ -13,7 +13,7 @@
       <AnchorPane layoutX="22.0" layoutY="64.0" prefHeight="285.0" prefWidth="500.0" style="-fx-background-color: rgba(76, 75, 80, 0.4); -fx-background-radius: 25;" styleClass="transPane">
          <children>
             <Button layoutX="162.0" layoutY="227.0" mnemonicParsing="false" onAction="#UserInfoEdit" prefHeight="25.0" prefWidth="64.0" text="Edit" />
-            <Button fx:id="UserBackToHome" layoutX="273.0" layoutY="227.0" mnemonicParsing="false" onAction="#UserBackToHome" prefHeight="25.0" prefWidth="64.0" text="Close" />
+            <Button fx:id="UserBackToHome" layoutX="292.0" layoutY="227.0" mnemonicParsing="false" onAction="#UserBackToHome" prefHeight="25.0" prefWidth="64.0" text="Close" />
             <Label layoutX="29.0" layoutY="30.0" prefHeight="25.0" prefWidth="70.0" text="Full Name:">
                <effect>
                   <DropShadow height="65.48" radius="30.7575" spread="0.02" width="59.55">

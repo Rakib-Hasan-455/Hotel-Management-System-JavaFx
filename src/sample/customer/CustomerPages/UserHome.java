@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public class UserHome {
     public void BackToLoginPage(ActionEvent actionEvent) throws IOException {
-        CommonTask.pageNavigation("../../sample.fxml", Main.stage,this.getClass(),"User Home", 550, 400);
+        CommonTask.pageNavigation("../../sample.fxml", Main.stage,this.getClass(),"User Home", 600, 400);
     }
 
     public void UserInfo(ActionEvent actionEvent) throws IOException {

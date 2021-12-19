@@ -19,10 +19,62 @@
     -fx-background-color: gray;
 }
 
+.table-view *.scroll-bar:horizontal *.increment-button,
+.table-view *.scroll-bar:horizontal *.decrement-button {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.table-view *.scroll-bar:horizontal *.increment-arrow,
+.table-view *.scroll-bar:horizontal *.decrement-arrow {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-shape: null;
+}
+
+.table-view *.scroll-bar:vertical *.increment-button,
+.table-view *.scroll-bar:vertical *.decrement-button {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.table-view *.scroll-bar:vertical *.increment-arrow,
+.table-view *.scroll-bar:vertical *.decrement-arrow {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-shape: null;
+}
+
 .jfx-text-area{
     -fx-prompt-text-fill: #ffffff;
     -fx-text-fill: #ffffff;
 }
+
+.jfx-text-area .content{
+    -fx-background-color: #4D536550;
+    -fx-background-radius: 8;
+}
+
+.text-area{
+    -fx-background-color: #4D5365;
+    -fx-prompt-text-fill: #ffffff;
+    /*-fx-border-radius: 8;*/
+    /*-fx-control-inner-background:  #7f8fa650;*/
+  }
+
+/*.text-area .content{*/
+/*    -fx-background-color: #4D536550;*/
+/*    !*-fx-background-radius: 8;*!*/
+/*    !*-fx-border-radius: 8;*!*/
+/*}*/
 
 .jfx-password-field {
     -fx-prompt-text-fill: #ffffff;

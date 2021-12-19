@@ -19,7 +19,7 @@
             <TableColumn fx:id="checkedOutCol" prefWidth="96.0" text="Checked Out" />
             <TableColumn fx:id="priceDayCol" prefWidth="84.0" text="Price/Day(tk)" />
             <TableColumn fx:id="totalPriceCol" prefWidth="91.0" text="Total Price(tk)" />
-            <TableColumn prefWidth="72.0" text="Slip" />
+            <TableColumn fx:id="slipCol" prefWidth="72.0" text="Slip" />
         </columns>
       </TableView>
       <TextField fx:id="UserCheckOutDetailsSearch" layoutX="218.0" layoutY="20.0" prefHeight="25.0" prefWidth="193.0" promptText="Search Anything" styleClass="searchBox">

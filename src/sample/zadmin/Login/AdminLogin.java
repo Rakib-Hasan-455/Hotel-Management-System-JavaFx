@@ -42,7 +42,7 @@ public class AdminLogin implements Initializable {
 //                ResultSet resultSet = preparedStatement.executeQuery();
 //                if (resultSet.next()) {
 //                    CommonTask.showAlert(Alert.AlertType.INFORMATION, "Login Success!", "Successfully Logged In!");
-                    CommonTask.pageNavigation("../AdminPages/AdminMain.fxml", Main.stage,this.getClass(),"Admin Dashboard", 1000, 600);
+                    CommonTask.pageNavigation("/sample/zadmin/AdminPages/AdminMain.fxml", Main.stage,this.getClass(),"Admin Dashboard", 1000, 600);
 //                } else {
 //                    CommonTask.showAlert(Alert.AlertType.ERROR, "Login Failed!", "Incorrect NID or Password!");
 //                }
@@ -55,7 +55,7 @@ public class AdminLogin implements Initializable {
         }
 
     public void BackToMain(ActionEvent actionEvent) throws IOException {
-        CommonTask.pageNavigation("../../sample.fxml", Main.stage,this.getClass(),"Hotel Management System", 600, 400);
+        CommonTask.pageNavigation("/sample/sample.fxml", Main.stage,this.getClass(),"Hotel Management System", 600, 400);
     }
 
     @Override

@@ -8,6 +8,6 @@ import java.io.IOException;
 
 public class AdminHome {
     public void BackToMain(ActionEvent actionEvent) throws IOException {
-        CommonTask.pageNavigation("../../sample.fxml", Main.stage,this.getClass(),"Admin Dashboard", 600, 400);
+        CommonTask.pageNavigation("/sample/sample.fxml", Main.stage,this.getClass(),"Admin Dashboard", 600, 400);
     }
 }

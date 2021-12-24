@@ -44,7 +44,7 @@ public class UserLogin implements Initializable {
                 ResultSet resultSet = preparedStatement.executeQuery();
                 if (resultSet.next()) {
                     CommonTask.showAlert(Alert.AlertType.INFORMATION, "Login Success!", "Successfully Logged In!");
-                    CommonTask.pageNavigation("../CustomerPages/UserMain.fxml", Main.stage, this.getClass(), "User Dashboard", 800, 400);
+                    CommonTask.pageNavigation("/sample/customer/CustomerPages/UserMain.fxml", Main.stage, this.getClass(), "User Dashboard", 800, 400);
                 } else {
                     CommonTask.showAlert(Alert.AlertType.ERROR, "Login Failed!", "Incorrect NID or Password!");
                 }
@@ -61,7 +61,7 @@ public class UserLogin implements Initializable {
     }
 @FXML
     public void BackToMain(ActionEvent mouseEvent) throws IOException {
-        CommonTask.pageNavigation("../../sample.fxml", Main.stage,this.getClass(),"Hotel Management System", 600, 400);
+        CommonTask.pageNavigation("/sample/sample.fxml", Main.stage,this.getClass(),"Hotel Management System", 600, 400);
     }
 
     @Override

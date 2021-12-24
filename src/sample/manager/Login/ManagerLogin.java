@@ -15,12 +15,12 @@ public class ManagerLogin implements Initializable {
     public ImageView closeWindow;
 
     public void ManagerLogin(ActionEvent actionEvent) throws IOException {
-        CommonTask.pageNavigation("../ManagerPages/ManagerMain.fxml", Main.stage,this.getClass(),"Manager Dashboard", 800, 600);
+        CommonTask.pageNavigation("/sample/manager/ManagerPages/ManagerMain.fxml", Main.stage,this.getClass(),"Manager Dashboard", 800, 600);
     }
 
 
     public void BackToMain(ActionEvent actionEvent) throws IOException {
-        CommonTask.pageNavigation("../../sample.fxml", Main.stage,this.getClass(),"Hotel Management System", 600, 400);
+        CommonTask.pageNavigation("/sample/sample.fxml", Main.stage,this.getClass(),"Hotel Management System", 600, 400);
     }
 
     @Override

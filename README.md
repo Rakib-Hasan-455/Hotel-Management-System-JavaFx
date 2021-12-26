@@ -1,6 +1,6 @@
 # `Hotel Management System With JavaFX`
 <br>
-<h4> Introduction: </h4>
+## Introduction:  
 Hotel management System is a desktop application where users
 can book hotel room, review about the hotel service. Managers
 can manage rooms, book rooms for new customers. And the admin of this application can create,

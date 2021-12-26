@@ -87,7 +87,7 @@ FontAwesomeFX 8.9:  <a href = "https://github.com/Rakib-Hasan-455/Hotel_Manageme
  Hotel Management System Database and Install it into your MySql Database.</li>
 <li> Your Java Version Must be 8 or above.</li>
 
-## Technology and Tools I Used in this project:
+## Things and Tools I Used in this project:
 <li> IntellIJ IDE </li>
 <li> SceneBuilder </li>
 <li> Java 8 </li>

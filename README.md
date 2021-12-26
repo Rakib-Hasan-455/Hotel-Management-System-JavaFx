@@ -23,7 +23,7 @@ Customer Sign-Up
 Customer UserInfo
 ![](screenshots/Customer000.PNG)
 Customer UserInfo Edit
-![](screenshots/Customer00000.PNG)
+![](screenshots/Customer0000.PNG)
 Customer Home
 ![](screenshots/Customer1.PNG)
 Customer Manage Room
@@ -40,7 +40,7 @@ Manager Home
 Manager Manage Room
 ![](screenshots/Manager1.PNG)
 Manager Check In
-![](screenshots/Manager2.PNG)
+![](screenshots/Manager 2.PNG)
 Manager Check Out
 ![](screenshots/Manager3.PNG)
 Manager Check History

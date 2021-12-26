@@ -1,6 +1,6 @@
 # `Hotel Management System With JavaFX`<br>
 
-## Introduction:  
+## Introduction:
 
 Hotel management System is a desktop application where users
 can book hotel room, review about the hotel service. Managers
@@ -15,9 +15,9 @@ employees can be more happy with this new system.
 
 ## Screenshots:
 <div align = center>
-  
-`Customer`
-  
+
+# `Customer`
+
 Customer Login <br>
 ![Customer Login](screenshots/Customer0.PNG "Customer Login") <br>
 Customer Sign-Up<br>
@@ -35,7 +35,7 @@ Customer Check In<br>
 Customer Check History<br>
 ![Customer Check History](screenshots/Customer4.PNG "Customer Check History") <br>
 
-`Manager`
+# `Manager`
 
 Manager Home <br>
 ![Manager Home](screenshots/Manager0.PNG "Manager Home") <br>
@@ -48,7 +48,7 @@ Manager Check Out <br>
 Manager Check History <br>
 ![Check History](screenshots/Manager4.PNG "Manager Check History") <br>
 
-`Admin`
+# `Admin`
 
 Admin Home <br>
 ![Admin Home](screenshots/Admin0.PNG "Admin Home") <br>
@@ -62,22 +62,22 @@ Admin Earning Log <br>
 ![Admin Earning Log](screenshots/Admin4.PNG "Admin Earning Log") <br>
 
   </div>
-  
+
 ## All Download Links:
-  
+
 Jar Download Link: <a href = "https://github.com/Rakib-Hasan-455/Hotel_Management_System-JavaFx/raw/master/Hotel_Management_System_JavaFx.jar"> Download </a><br>
 Exe File Download Link: <a href = "https://github.com/Rakib-Hasan-455/Hotel_Management_System-JavaFx/raw/master/Hotel_Management_System.exe"> Download </a><br>
 MySql Database Download Link:  <a href = "https://downgit.github.io/#/home?url=https://github.com/Rakib-Hasan-455/Hotel_Management_System-JavaFx/blob/master/Hotel_Management_System.sql"> Download </a><br>
 Java Version 8 Download Link: <a href = "https://www.oracle.com/java/technologies/javase/javase8u211-later-archive-downloads.html"> Download </a><br>
 <br>
 
-## Used Library Files:  
+## Used Library Files:
 
 JFoenix 8.0.10: <a href = "https://github.com/Rakib-Hasan-455/Hotel_Management_System-JavaFx/raw/master/lib/jfoenix-8.0.10.jar"> Download </a><br>
 MySql JDBC Connector 8.0.26:  <a href = "https://github.com/Rakib-Hasan-455/Hotel_Management_System-JavaFx/raw/master/lib/mysql-connector-java-8.0.26.jar"> Download </a><br>
 FontAwesomeFX 8.9:  <a href = "https://github.com/Rakib-Hasan-455/Hotel_Management_System-JavaFx/raw/master/lib/fontawesomefx-8.9.jar"> Download </a><br>
 
-## Requirements to Run Jar/Exe file: 
+## Requirements to Run Jar/Exe file:
 <li>Install MySql and it should be running on <b>localhost:3306</b>  .</li>
 <li>Download Hotel Management System Database and Install it into your MySql Database.</li>
 <li> Your Java Version Must be 8 or above.</li>

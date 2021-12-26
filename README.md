@@ -60,17 +60,17 @@ Admin Earning Log <br>
 ![](screenshots/Admin4.PNG) <br>
 
 <h3>All Download Links:</h3>
-Jar Download Link: [Download](https://github.com/Rakib-Hasan-455/Hotel_Management_System-JavaFx/raw/master/Hotel_Management_System_JavaFx.jar) 
+Jar Download Link: [Download](https://github.com/Rakib-Hasan-455/Hotel_Management_System-JavaFx/raw/master/Hotel_Management_System_JavaFx.jar)
 <br>
-Exe File Download Link: [Download](https://github.com/Rakib-Hasan-455/Hotel_Management_System-JavaFx/raw/master/Hotel_Management_System.exe) 
+Exe File Download Link: [Download](https://github.com/Rakib-Hasan-455/Hotel_Management_System-JavaFx/raw/master/Hotel_Management_System.exe)
 <br>
-MySql Database Download Link: [Download](https://downgit.github.io/#/home?url=https://github.com/Rakib-Hasan-455/Hotel_Management_System-JavaFx/blob/master/Hotel_Management_System.sql) 
+MySql Database Download Link: [Download](https://downgit.github.io/#/home?url=https://github.com/Rakib-Hasan-455/Hotel_Management_System-JavaFx/blob/master/Hotel_Management_System.sql)
 <br>
 Java Version 8 Download Link: [Download](https://www.oracle.com/java/technologies/javase/javase8u211-later-archive-downloads.html)
 <br>
 
 <h3>Used Library Files: </h3>
-JFoenix 8.0.10: [Download](https://github.com/Rakib-Hasan-455/Hotel_Management_System-JavaFx/raw/master/lib/jfoenix-8.0.10.jar) <br> 
+JFoenix 8.0.10: [Download](https://github.com/Rakib-Hasan-455/Hotel_Management_System-JavaFx/raw/master/lib/jfoenix-8.0.10.jar) <br>
 MySql JDBC Connector 8.0.26: [Download](https://github.com/Rakib-Hasan-455/Hotel_Management_System-JavaFx/raw/master/lib/mysql-connector-java-8.0.26.jar) <br>
 FontAwesomeFX 8.9: [Download](https://github.com/Rakib-Hasan-455/Hotel_Management_System-JavaFx/raw/master/lib/fontawesomefx-8.9.jar) <br>
 

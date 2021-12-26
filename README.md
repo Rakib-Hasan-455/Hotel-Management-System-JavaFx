@@ -28,8 +28,9 @@ Customer Sign-Up<br>
 ![Customer Sign-Up](screenshots/Customer00.PNG "Customer Sign-Up") <br>
 Customer UserInfo<br>
 ![Customer UserInfo](screenshots/Customer000.PNG "Customer UserInfo") <br>
-Customer UserInfo Edit<br>
-![UserInfo Edit](screenshots/Customer0000.PNG "UserInfo Edit") <br>
+
+[comment]: <> (Customer UserInfo Edit<br>)
+[comment]: <> (![UserInfo Edit]&#40;screenshots/Customer0000.PNG "UserInfo Edit"&#41; <br>)
 Customer Home<br>
 ![Customer Home](screenshots/Customer1.PNG "Customer Home") <br>
 Customer Manage Room<br>
@@ -41,27 +42,34 @@ Customer Check History<br>
 
 ## `Manager`
 
-Manager Home <br>
-![Manager Home](screenshots/Manager0.PNG "Manager Home") <br>
+[comment]: <> (Manager Home <br>)
+[comment]: <> (![Manager Home]&#40;screenshots/Manager0.PNG "Manager Home"&#41; <br>)
 Manager Manage Room <br>
 ![Manage Room](screenshots/Manager1.PNG "Manager Manage Room") <br>
-Manager Check In <br>
-![Check In](screenshots/Manager2.PNG "Manager Check In") <br>
+
+[comment]: <> (Manager Check In <br>)
+
+[comment]: <> (![Check In]&#40;screenshots/Manager2.PNG "Manager Check In"&#41; <br>)
 Manager Check Out <br>
 ![Check Out](screenshots/Manager3.PNG "Manager Check Out") <br>
-Manager Check History <br>
-![Check History](screenshots/Manager4.PNG "Manager Check History") <br>
+
+[comment]: <> (Manager Check History <br>)
+
+[comment]: <> (![Check History]&#40;screenshots/Manager4.PNG "Manager Check History"&#41; <br>)
 
 ## `Admin`
 
-Admin Home <br>
-![Admin Home](screenshots/Admin0.PNG "Admin Home") <br>
+[comment]: <> (Admin Home <br>)
+
+[comment]: <> (![Admin Home]&#40;screenshots/Admin0.PNG "Admin Home"&#41; <br>)
 Admin Add Employee <br>
 ![Add Employee](screenshots/Admin1.PNG "Add Employee") <br>
 Admin Employee Info <br>
 ![Admin Employee Info](screenshots/Admin2.PNG "Admin Employee Info") <br>
-Admin Customer Info <br>
-![Admin Customer Info](screenshots/Admin3.PNG "Admin Customer Info") <br>
+
+[comment]: <> (Admin Customer Info <br>)
+
+[comment]: <> (![Admin Customer Info]&#40;screenshots/Admin3.PNG "Admin Customer Info"&#41; <br>)
 Admin Earning Log <br>
 ![Admin Earning Log](screenshots/Admin4.PNG "Admin Earning Log") <br>
 

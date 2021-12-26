@@ -1,6 +1,7 @@
-# `Hotel Management System With JavaFX`
-<br>
+# `Hotel Management System With JavaFX`<br>
+
 ## Introduction:  
+
 Hotel management System is a desktop application where users
 can book hotel room, review about the hotel service. Managers
 can manage rooms, book rooms for new customers. And the admin of this application can create,
@@ -12,10 +13,11 @@ with this application than they used to keep track of all details
 manually in their ledger. The customers, managers and the
 employees can be more happy with this new system.
 
-# `Screenshots:`
-
+## Screenshots:
+<div align = center>
+  
 `Customer`
-
+  
 Customer Login <br>
 ![Customer Login](screenshots/Customer0.PNG) <br>
 Customer Sign-Up<br>
@@ -42,7 +44,7 @@ Manager Manage Room <br>
 Manager Check In <br>
 ![Check In](screenshots/Manager2.PNG) <br>
 Manager Check Out <br>
-![Check Out](screenshots/Manager3.PNG)
+![Check Out](screenshots/Manager3.PNG) <br>
 Manager Check History <br>
 ![Check History](screenshots/Manager4.PNG) <br>
 
@@ -59,6 +61,8 @@ Admin Customer Info <br>
 Admin Earning Log <br>
 ![Admin Earning Log](screenshots/Admin4.PNG) <br>
 
+  </div>
+  
 ## All Download Links:
   
 Jar Download Link: <a href = "https://github.com/Rakib-Hasan-455/Hotel_Management_System-JavaFx/raw/master/Hotel_Management_System_JavaFx.jar"> Download </a><br>

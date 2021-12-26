@@ -71,7 +71,7 @@ Admin Earning Log <br>
 
 Jar Download Link: <a href = "https://github.com/Rakib-Hasan-455/Hotel_Management_System-JavaFx/raw/master/Hotel_Management_System_JavaFx.jar"> Download </a><br>
 Exe File Download Link: <a href = "https://github.com/Rakib-Hasan-455/Hotel_Management_System-JavaFx/raw/master/Hotel_Management_System.exe"> Download </a><br>
-MySql Database Download Link:  <a href = "https://downgit.github.io/#/home?url=https://github.com/Rakib-Hasan-455/Hotel_Management_System-JavaFx/blob/master/Hotel_Management_System.sql"> Download </a><br>
+Hotel Management System Database Download Link:  <a href = "https://downgit.github.io/#/home?url=https://github.com/Rakib-Hasan-455/Hotel_Management_System-JavaFx/blob/master/Hotel_Management_System.sql"> Download </a><br>
 Java Version 8 Download Link: <a href = "https://www.oracle.com/java/technologies/javase/javase8u211-later-archive-downloads.html"> Download </a><br>
 <br>
 
@@ -83,7 +83,8 @@ FontAwesomeFX 8.9:  <a href = "https://github.com/Rakib-Hasan-455/Hotel_Manageme
 
 ## Requirements to Run Jar/Exe file:
 <li>Install MySql and it should be running on <b>localhost:3306</b>  .</li>
-<li>Download Hotel Management System Database and Install it into your MySql Database.</li>
+<li><a href = "https://downgit.github.io/#/home?url=https://github.com/Rakib-Hasan-455/Hotel_Management_System-JavaFx/blob/master/Hotel_Management_System.sql"> Download </a> 
+ Hotel Management System Database and Install it into your MySql Database.</li>
 <li> Your Java Version Must be 8 or above.</li>
 
 ## Contributing

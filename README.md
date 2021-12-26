@@ -13,6 +13,10 @@ with this application than they used to keep track of all details
 manually in their ledger. The customers, managers and the
 employees can be more happy with this new system.
 
+## Watch Overview Video
+
+[![Watch the video](screenshots/Capture.PNG "Watch Video")](https://www.youtube.com/watch?v=bqJYexRSPCA)
+
 ## Screenshots:
 <div align = center>
 

@@ -16,7 +16,11 @@ employees can be more happy with this new system.
 ## Screenshots:
 <div align = center>
 
-# `Customer`
+## `Home Window`
+
+Main Window <br>
+![Main window](screenshots/Main.PNG "Hotel Management System")
+## `Customer`
 
 Customer Login <br>
 ![Customer Login](screenshots/Customer0.PNG "Customer Login") <br>
@@ -35,7 +39,7 @@ Customer Check In<br>
 Customer Check History<br>
 ![Customer Check History](screenshots/Customer4.PNG "Customer Check History") <br>
 
-# `Manager`
+## `Manager`
 
 Manager Home <br>
 ![Manager Home](screenshots/Manager0.PNG "Manager Home") <br>
@@ -48,7 +52,7 @@ Manager Check Out <br>
 Manager Check History <br>
 ![Check History](screenshots/Manager4.PNG "Manager Check History") <br>
 
-# `Admin`
+## `Admin`
 
 Admin Home <br>
 ![Admin Home](screenshots/Admin0.PNG "Admin Home") <br>

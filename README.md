@@ -19,47 +19,47 @@ employees can be more happy with this new system.
 `Customer`
   
 Customer Login <br>
-![Customer Login](screenshots/Customer0.PNG) <br>
+![Customer Login](screenshots/Customer0.PNG "Customer Login") <br>
 Customer Sign-Up<br>
-![Customer Sign-Up](screenshots/Customer00.PNG) <br>
+![Customer Sign-Up](screenshots/Customer00.PNG "Customer Sign-Up") <br>
 Customer UserInfo<br>
-![Customer UserInfo](screenshots/Customer000.PNG) <br>
+![Customer UserInfo](screenshots/Customer000.PNG "Customer UserInfo") <br>
 Customer UserInfo Edit<br>
-![UserInfo Edit](screenshots/Customer0000.PNG) <br>
+![UserInfo Edit](screenshots/Customer0000.PNG "UserInfo Edit") <br>
 Customer Home<br>
-![](screenshots/Customer1.PNG) <br>
+![Customer Home](screenshots/Customer1.PNG "Customer Home") <br>
 Customer Manage Room<br>
-![Customer Manage Room](screenshots/Customer2.PNG) <br>
+![Customer Manage Room](screenshots/Customer2.PNG "Customer Manage Room") <br>
 Customer Check In<br>
-![Customer Check In](screenshots/Customer3.PNG) <br>
+![Customer Check In](screenshots/Customer3.PNG "Customer Check In") <br>
 Customer Check History<br>
-![Customer Check History](screenshots/Customer4.PNG) <br>
+![Customer Check History](screenshots/Customer4.PNG "Customer Check History") <br>
 
 `Manager`
 
 Manager Home <br>
-![Manager Home](screenshots/Manager0.PNG) <br>
+![Manager Home](screenshots/Manager0.PNG "Manager Home") <br>
 Manager Manage Room <br>
-![Manage Room](screenshots/Manager1.PNG) <br>
+![Manage Room](screenshots/Manager1.PNG "Manager Manage Room") <br>
 Manager Check In <br>
-![Check In](screenshots/Manager2.PNG) <br>
+![Check In](screenshots/Manager2.PNG "Manager Check In") <br>
 Manager Check Out <br>
-![Check Out](screenshots/Manager3.PNG) <br>
+![Check Out](screenshots/Manager3.PNG "Manager Check Out") <br>
 Manager Check History <br>
-![Check History](screenshots/Manager4.PNG) <br>
+![Check History](screenshots/Manager4.PNG "Manager Check History") <br>
 
 `Admin`
 
 Admin Home <br>
-![Admin Home](screenshots/Admin0.PNG) <br>
+![Admin Home](screenshots/Admin0.PNG "Admin Home") <br>
 Admin Add Employee <br>
-![Add Employee](screenshots/Admin1.PNG) <br>
+![Add Employee](screenshots/Admin1.PNG "Add Employee") <br>
 Admin Employee Info <br>
-![Admin Employee Info](screenshots/Admin2.PNG) <br>
+![Admin Employee Info](screenshots/Admin2.PNG "Admin Employee Info") <br>
 Admin Customer Info <br>
-![Admin Customer Info](screenshots/Admin3.PNG) <br>
+![Admin Customer Info](screenshots/Admin3.PNG "Admin Customer Info") <br>
 Admin Earning Log <br>
-![Admin Earning Log](screenshots/Admin4.PNG) <br>
+![Admin Earning Log](screenshots/Admin4.PNG "Admin Earning Log") <br>
 
   </div>
   

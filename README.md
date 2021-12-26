@@ -71,7 +71,7 @@ JFoenix 8.0.10: <a href = "https://github.com/Rakib-Hasan-455/Hotel_Management_S
 MySql JDBC Connector 8.0.26:  <a href = "https://github.com/Rakib-Hasan-455/Hotel_Management_System-JavaFx/raw/master/lib/mysql-connector-java-8.0.26.jar"> Download </a><br>
 FontAwesomeFX 8.9:  <a href = "https://github.com/Rakib-Hasan-455/Hotel_Management_System-JavaFx/raw/master/lib/fontawesomefx-8.9.jar"> Download </a><br>
 
-<h3> Requirement to Run Jar/Exe file: </h3>
+<h3> Requirements to Run Jar/Exe file: </h3>
 <li>Install MySql and it should be running on <b>localhost:3306</b>  .</li>
 <li>Download Hotel Management System Database and Install it into your MySql Database.</li>
 <li> Your Java Version Must be 8 or above.</li>

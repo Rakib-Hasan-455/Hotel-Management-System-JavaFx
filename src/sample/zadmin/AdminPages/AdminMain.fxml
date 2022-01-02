@@ -69,7 +69,7 @@
                      <children>
                         <FontAwesomeIconView glyphName="CIRCLE" size="18" styleClass="minimizeIcon" />
                         <FontAwesomeIconView glyphName="CIRCLE" layoutX="54.0" layoutY="29.0" size="18" styleClass="maximizeIcon" />
-                        <FontAwesomeIconView glyphName="CIRCLE" layoutX="65.0" layoutY="29.0" size="18" styleClass="closeIcon" />
+                        <FontAwesomeIconView glyphName="CIRCLE" layoutX="65.0" layoutY="29.0" onMouseClicked="#closeApplication" size="18" styleClass="closeIcon" />
                      </children>
                   </HBox>
                </children>

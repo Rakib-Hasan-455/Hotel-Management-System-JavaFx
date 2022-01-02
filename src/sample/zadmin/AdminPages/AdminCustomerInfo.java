@@ -5,24 +5,39 @@ import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import javafx.util.Callback;
+import sample._BackEnd.CommonTask;
 import sample._BackEnd.DBConnection;
 import sample._BackEnd.TableView.AdminCustomerTable;
+import sample._BackEnd.TableView.AdminEmployeeTable;
 import sample._BackEnd.TableView.ManagerRoomTable;
+import sample.manager.ManagerPages.RoomInfoEdit.RoomInfoEdit;
+import sample.zadmin.AdminPages.EditCustomerEmployee.CustomerInfoEdit;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
+import java.util.concurrent.atomic.AtomicReference;
+
+import static sample.Main.xxx;
+import static sample.Main.yyy;
 
 public class AdminCustomerInfo extends DBConnection implements Initializable{
     public TableView<AdminCustomerTable> customerTable;
@@ -50,6 +65,7 @@ public class AdminCustomerInfo extends DBConnection implements Initializable{
     }
 
     public void showCustomerTable(){
+        TABLEROW.clear();
         Connection connection = getConnections();
         try {
             if(!connection.isClosed()){
@@ -131,7 +147,8 @@ public class AdminCustomerInfo extends DBConnection implements Initializable{
                                         );
 
                                         //delete sql statements
-
+                                        AdminCustomerTable adminCustomerTable = getTableView().getItems().get(getIndex());
+                                        tableRowDelete(adminCustomerTable);
                                     });
 
                                     editIcon.setStyle(
@@ -165,8 +182,9 @@ public class AdminCustomerInfo extends DBConnection implements Initializable{
                                                         "-glyph-size:20px;"
                                                         +"-fx-fill:lightgreen;"
                                         );
-
-                                        //edit in new stage, need to do some code+fxml file stuff ahh
+                                        AdminCustomerTable adminCustomerTable = getTableView().getItems().get(getIndex());
+//                                        System.out.println(managerRoomTable.getROOMNO());
+                                        editTableRowInfo(adminCustomerTable);
 
                                     });
 
@@ -185,6 +203,74 @@ public class AdminCustomerInfo extends DBConnection implements Initializable{
                     }
                 };
         actionCol.setCellFactory(cellCallback);
+    }
+
+    private void editTableRowInfo(AdminCustomerTable adminCustomerTable) {
+        Connection connection = getConnections();
+        try {
+            if (!connection.isClosed()) {
+                FXMLLoader loader = new FXMLLoader();
+                loader.setLocation(getClass().getResource("/sample/zadmin/AdminPages/EditCustomerEmployee/CustomerInfoEdit.fxml"));
+                Parent viewContact = loader.load();
+                Scene scene = new Scene(viewContact);
+                // update information
+                CustomerInfoEdit customerInfoEdit = loader.getController();
+                customerInfoEdit.setCustomerInfo(adminCustomerTable);
+//                    System.out.println(managerRoomTable.getROOMNO() + " " + managerRoomTable.getTYPE() + " " + managerRoomTable.getCAPACITY() + " " + managerRoomTable.getPRICEDAY());
+                Stage window = new Stage();
+                window.setScene(scene);
+                window.initStyle(StageStyle.UNDECORATED);
+
+                stagePosition(window, viewContact);
+
+                window.showAndWait();
+                showCustomerTable();
+            }
+
+        } catch (SQLException | IOException throwables) {
+            throwables.printStackTrace();
+        } finally {
+            closeConnections();
+        }
+    }
+
+    private void stagePosition(Stage primaryStage, Parent root) {
+        AtomicReference<Double> x = new AtomicReference<>(primaryStage.getX());
+        AtomicReference<Double> y = new AtomicReference<>(primaryStage.getY());
+        root.setOnMousePressed(event -> {
+            xxx = event.getSceneX();
+            yyy = event.getSceneY();
+        });
+        root.setOnMouseDragged(event -> {
+//            if(event.getButton() == MouseButton.SECONDARY) {
+            primaryStage.setX(event.getScreenX() - xxx);
+            primaryStage.setY(event.getScreenY() - yyy);
+            x.set(primaryStage.getX());
+            y.set(primaryStage.getY());
+//            }
+        });
+    }
+
+    public void tableRowDelete(AdminCustomerTable adminCustomerTable) {
+//        String roomStatus = managerRoomTable.getSTATUS();
+//        if (!roomStatus.equals("Booked")) {
+        Connection connection = getConnections();
+        try {
+            if (!connection.isClosed()) {
+                String sql = "DELETE FROM CustomerInfo where NID=?";
+                PreparedStatement statement = connection.prepareStatement(sql);
+                statement.setString(1, adminCustomerTable.getNID());
+                statement.execute();
+                CommonTask.showAlert(Alert.AlertType.INFORMATION, "Delete Operation Successful", "Customer Named " + adminCustomerTable.getName() + " is deleted from database!");
+
+                //showTableInformation();
+                customerTable.getItems().remove(adminCustomerTable);
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        } finally {
+            closeConnections();
+        }
     }
 
 }

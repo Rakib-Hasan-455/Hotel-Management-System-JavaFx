@@ -49,7 +49,7 @@ public class UserInfo implements Initializable {
 
     @FXML
     void UserInfoEdit(ActionEvent event) throws IOException {
-        CommonTask.pageNavigation("UserInfoEdit.fxml", (Stage) UserBackToHome.getScene().getWindow(),this.getClass(),"User Home", 550, 400);
+        CommonTask.pageNavigation("EmployeeInfoEdit.fxml", (Stage) UserBackToHome.getScene().getWindow(),this.getClass(),"User Home", 550, 400);
     }
 
     @Override

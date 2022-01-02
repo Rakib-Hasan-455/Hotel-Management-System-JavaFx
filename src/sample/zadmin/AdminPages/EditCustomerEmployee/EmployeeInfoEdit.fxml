@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+
+<AnchorPane prefHeight="400.0" prefWidth="550.0" styleClass="bodybg" stylesheets="@CSS/imageSet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.zadmin.AdminPages.EditCustomerEmployee.EmployeeInfoEdit">
+   <children>
+      <AnchorPane layoutX="22.0" layoutY="64.0" prefHeight="285.0" prefWidth="500.0" style="-fx-background-color: rgba(76, 75, 80, 0.4); -fx-background-radius: 25;">
+         <children>
+            <Button fx:id="UserConfirm" layoutX="162.0" layoutY="227.0" mnemonicParsing="false" onAction="#UserConfirmEdit" prefHeight="25.0" prefWidth="64.0" text="Save">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.22608695924282074" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Label layoutX="29.0" layoutY="30.0" prefHeight="25.0" prefWidth="70.0" text="Full Name:">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.22608695924282074" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <Label layoutX="29.0" layoutY="78.0" prefHeight="25.0" prefWidth="70.0" text="NID No    :">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.22608695924282074" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <Label layoutX="29.0" layoutY="120.0" prefHeight="25.0" prefWidth="70.0" text="Email       :">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.22608695924282074" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <Label layoutX="29.0" layoutY="160.0" prefHeight="25.0" prefWidth="70.0" text="Phone     :">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.22608695924282074" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <Label layoutX="280.0" layoutY="65.0" prefHeight="25.0" prefWidth="70.0" text="Password :">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.22608695924282074" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <Label layoutX="281.0" layoutY="108.0" prefHeight="25.0" prefWidth="70.0" text="Address   :">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.22608695924282074" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <TextField fx:id="UserNameEdit" layoutX="99.0" layoutY="30.0" style="-fx-text-fill: white; -fx-background-color: #7f8fa650; -fx-background-radius: 7;">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.05652173236012459" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </TextField>
+            <TextField fx:id="UserNidEdit" layoutX="99.0" layoutY="78.0" style="-fx-text-fill: white; -fx-background-color: #7f8fa650; -fx-background-radius: 7;">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.05652173236012459" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </TextField>
+            <TextField fx:id="UserEmailEdit" layoutX="99.0" layoutY="120.0" style="-fx-text-fill: white; -fx-background-color: #7f8fa650; -fx-background-radius: 7;">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.05652173236012459" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </TextField>
+            <TextField fx:id="UserPhoneEdit" layoutX="99.0" layoutY="160.0" style="-fx-text-fill: white; -fx-background-color: #7f8fa650; -fx-background-radius: 7;">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.05652173236012459" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </TextField>
+            <TextField fx:id="UserPassEdit" layoutX="350.0" layoutY="65.0" style="-fx-text-fill: white; -fx-background-color: #7f8fa650; -fx-background-radius: 7;">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.05652173236012459" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </TextField>
+            <JFXTextArea fx:id="UserAddressEdit" layoutX="350.0" layoutY="108.0" prefHeight="77.0" prefWidth="149.0">
+               <padding>
+                  <Insets left="6.0" />
+               </padding></JFXTextArea>
+            <Button layoutX="292.0" layoutY="227.0" mnemonicParsing="false" onAction="#BackBtn" prefHeight="25.0" prefWidth="64.0" text="Close">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.22608695924282074" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane styleClass="titlePane" stylesheets="@CSS/MainTitlebarPane.css">
+         <children>
+            <HBox layoutX="450.0" prefHeight="30.0" prefWidth="100.0" styleClass="closePane">
+               <children>
+                  <FontAwesomeIconView glyphName="CIRCLE" size="18" styleClass="minimizeIcon" />
+                  <FontAwesomeIconView glyphName="CIRCLE" layoutX="10.0" layoutY="20.0" size="18" styleClass="maximizeIcon" />
+                  <FontAwesomeIconView glyphName="CIRCLE" layoutX="22.0" layoutY="20.0" size="18" styleClass="closeIcon" />
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="132.0" styleClass="titlePane">
+               <children>
+                  <FontAwesomeIconView glyphName="EDIT" size="18" />
+                  <Label style="-fx-text-fill: black;" styleClass="titleText" text="User Info" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

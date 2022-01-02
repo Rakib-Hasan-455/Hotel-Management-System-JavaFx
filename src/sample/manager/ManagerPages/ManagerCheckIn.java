@@ -61,29 +61,31 @@ public class ManagerCheckIn extends DBConnection implements Initializable {
 
     private void setRoomInfoo(javafx.event.Event event) {
         String roomNo = roomChoiceBox.getValue()+"";
-        Connection connection = DBConnection.getConnections();
-        try {
-            if(!connection.isClosed()){
-                String sql = "SELECT * FROM ROOMINFO WHERE ROOM_NO = ?";
-                PreparedStatement statement = connection.prepareStatement(sql);
-                statement.setString(1, roomNo);
-                ResultSet resultSet = statement.executeQuery();
-                if(resultSet.next()){
-                    String roomCapacity = resultSet.getString("CAPACITY");
-                    String roomType = resultSet.getString("TYPE");
-                    String roomPriceDay = resultSet.getString("PRICE_DAY");
+        if(!roomNo.equals("null")) {
+            Connection connection = DBConnection.getConnections();
+            try {
+                if (!connection.isClosed()) {
+                    String sql = "SELECT * FROM ROOMINFO WHERE ROOM_NO = ?";
+                    PreparedStatement statement = connection.prepareStatement(sql);
+                    statement.setString(1, roomNo);
+                    ResultSet resultSet = statement.executeQuery();
+                    if (resultSet.next()) {
+                        String roomCapacity = resultSet.getString("CAPACITY");
+                        String roomType = resultSet.getString("TYPE");
+                        String roomPriceDay = resultSet.getString("PRICE_DAY");
 
-                    roomCapacityField.setText(roomCapacity);
-                    roomPriceField.setText(roomPriceDay);
-                    roomTypeField.setText(roomType);
-                } else {
-                    CommonTask.showAlert(Alert.AlertType.ERROR, "ERROR", "Can't get/set Info!");
+                        roomCapacityField.setText(roomCapacity);
+                        roomPriceField.setText(roomPriceDay);
+                        roomTypeField.setText(roomType);
+                    } else {
+                        CommonTask.showAlert(Alert.AlertType.ERROR, "ERROR", "Can't get/set Info!");
+                    }
                 }
+            } catch (SQLException throwables) {
+                throwables.printStackTrace();
+            } finally {
+                DBConnection.closeConnections();
             }
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        } finally {
-            DBConnection.closeConnections();
         }
     }
 
@@ -108,6 +110,7 @@ public class ManagerCheckIn extends DBConnection implements Initializable {
             DBConnection.closeConnections();
         }
         roomChoiceBox.getItems().setAll(rooms);
+        roomChoiceBox.setValue(null);
     }
 
     private void showCustomerTable() {
@@ -192,6 +195,20 @@ public class ManagerCheckIn extends DBConnection implements Initializable {
                 DBConnection.closeConnections();
             }
             updateChoiceBox();
+            clearTextFields();
         }
+    }
+
+    private void clearTextFields() {
+        nidField.setText("");
+        nameField.setText("");
+        phoneField.setText("");
+        emailField.setText("");
+        addressField.setText("");
+        roomTypeField.setText("");
+        roomCapacityField.setText("");
+        roomPriceField.setText("");
+        UserCheckIndate.getEditor().clear();
+//        roomChoiceBox.setValue(null);
     }
 }

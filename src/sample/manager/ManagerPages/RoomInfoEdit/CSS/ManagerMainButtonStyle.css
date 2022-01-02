@@ -1,0 +1,17 @@
+.button{
+    -fx-background-color: white;
+    -fx-background-radius: 30 0 0 30;
+    -fx-font-size: 13;
+}
+
+.button:hover{
+    -fx-background-color: Khaki;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.button:focused{
+    -fx-background-color: lightgreen;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}

@@ -11,7 +11,6 @@ import javafx.scene.input.MouseEvent;
 import sample._BackEnd.CommonTask;
 import sample._BackEnd.DBConnection;
 import sample._BackEnd.TableView.ManagerCheckInDetailsTable;
-import sample._BackEnd.TableView.ManagerCheckOutTable;
 
 import java.net.URL;
 import java.sql.Connection;
@@ -78,8 +77,10 @@ public class ManagerCheckOut extends DBConnection implements Initializable {
             }
 
         } else {
+            //checkOutDatepicker.getEditor().clear();
+//            checkOutDatepicker.setValue(null);
             CommonTask.showAlert(Alert.AlertType.WARNING, "Warning", "Checked-In Date is empty!");
-        }
+       }
     }
 
     private long dayDifference(String checkOut, String checkIn) throws ParseException {
@@ -165,7 +166,18 @@ public class ManagerCheckOut extends DBConnection implements Initializable {
                 DBConnection.closeConnections();
             }
         }
+        clearTextFields();
     }
 
+    private void clearTextFields() {
+        siNoField.setText("");
+        nameField.setText("");
+        checkedInField.setText("");
+        checkOutDatepicker.getEditor().clear();
+        roomNoField.setText("");
+        priceDayField.setText("");
+        daysTotalField.setText("");
+        totalPriceField.setText("");
+    }
 
 }

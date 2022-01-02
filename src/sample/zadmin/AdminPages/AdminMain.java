@@ -3,6 +3,7 @@ package sample.zadmin.AdminPages;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 
@@ -49,5 +50,10 @@ public class AdminMain implements Initializable {
 
     public void AdminTotalEarnings(ActionEvent actionEvent) {
         windowLoad("AdminTotalEarnings.fxml");
+    }
+
+
+    public void closeApplication(MouseEvent mouseEvent) {
+        System.exit(0);
     }
 }

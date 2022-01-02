@@ -22,6 +22,7 @@ public class CommonTask extends Main {
     public static void pageNavigation(String to, Stage stage, Class<?> classes, String title, int width, int height) throws IOException {
         double xTemp = x;
         double yTemp = y;
+//        String stageValue = String.valueOf(stage);
         if (stage == null) {
             xTemp = x + (width/5.0);
             yTemp = y + (height/7.0);
@@ -55,7 +56,14 @@ public class CommonTask extends Main {
         x = finalStage.getX();
         y = finalStage.getY();
 //        ResizeHelper.addResizeListener(stage);
-        stage.show();
+//        System.out.println(stageValue);
+//        if(!stageValue.equals("null")) {
+//            System.out.println(stageValue);
+            stage.show();
+//        } else {
+//            System.out.println(stageValue);
+//            stage.showAndWait();
+//        }
     }
 
     public static void showAlert(Alert.AlertType type, String title, String header){

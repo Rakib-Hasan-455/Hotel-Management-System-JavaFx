@@ -3,6 +3,7 @@ package sample.manager.ManagerPages;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import java.net.URL;
@@ -47,5 +48,9 @@ public class ManagerMain implements Initializable {
 
     public void CheckOutDetails(ActionEvent actionEvent) {
         windowLoad("ManagerCheckOutDetails.fxml");
+    }
+
+    public void closeApplication(MouseEvent mouseEvent) {
+        System.exit(0);
     }
 }

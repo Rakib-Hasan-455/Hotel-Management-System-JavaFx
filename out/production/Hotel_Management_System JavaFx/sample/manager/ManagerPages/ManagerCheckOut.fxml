@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="670.0" styleClass="bodybg" stylesheets="@CSS/imageSetManager.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.manager.ManagerPages.ManagerCheckOut">
+<AnchorPane prefHeight="600.0" prefWidth="670.0" styleClass="bodybg" stylesheets="@CSS/imageSet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.manager.ManagerPages.ManagerCheckOut">
    <children>
       <Pane layoutX="36.0" layoutY="315.0" prefHeight="241.0" prefWidth="561.0" style="-fx-background-color: rgba(76, 75, 80, 0.5); -fx-background-radius: 25;" />
       <TextField layoutX="236.0" layoutY="14.0" promptText="Search Anything" styleClass="searchBox" />

@@ -68,7 +68,7 @@ public class UserInfoEdit implements Initializable {
                 CommonTask.showAlert(Alert.AlertType.INFORMATION, "Successful", "Update Successful!");
                 CommonTask.pageNavigation("UserInfo.fxml", (Stage) UserConfirm.getScene().getWindow(),this.getClass(),"User Home", 550, 400);
             } catch (SQLException e){
-                CommonTask.showAlert(Alert.AlertType.ERROR, "Error", "Account already exists with this NID!");
+                CommonTask.showAlert(Alert.AlertType.ERROR, "Error", "Maybe Sql Error!");
             } finally {
                 DBConnection.closeConnections();
             }

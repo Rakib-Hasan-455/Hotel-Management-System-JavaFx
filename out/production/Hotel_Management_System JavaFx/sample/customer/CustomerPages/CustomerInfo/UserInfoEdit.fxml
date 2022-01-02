@@ -149,7 +149,7 @@
             </HBox>
             <HBox prefHeight="30.0" prefWidth="132.0" styleClass="titlePane">
                <children>
-                  <FontAwesomeIconView glyphName="USER" size="18" />
+                  <FontAwesomeIconView glyphName="EDIT" size="18" />
                   <Label style="-fx-text-fill: black;" styleClass="titleText" text="User Info" />
                </children>
             </HBox>

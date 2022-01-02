@@ -5,7 +5,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="600.0" prefWidth="670.0" styleClass="bodybg" stylesheets="@CSS/imageSetManager.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.manager.ManagerPages.ManagerCheckOutDetails">
+<AnchorPane prefHeight="600.0" prefWidth="670.0" styleClass="bodybg" stylesheets="@CSS/imageSet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.manager.ManagerPages.ManagerCheckOutDetails">
    <children>
       <TextField layoutX="236.0" layoutY="14.0" promptText="Search Anything" styleClass="searchBox" />
       <TableView fx:id="checkInoutTable" layoutX="8.0" layoutY="50.0" prefHeight="508.0" prefWidth="620.0">

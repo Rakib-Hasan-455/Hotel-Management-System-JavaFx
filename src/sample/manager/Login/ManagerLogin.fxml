@@ -16,8 +16,8 @@
       <Button layoutX="290.0" layoutY="22.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="20.0" style="-fx-background-color: transparent;" text=" " />
       <Pane layoutX="33.0" layoutY="26.0" prefHeight="187.0" prefWidth="200.0" style="-fx-background-color: rgba(76, 75, 80, 0.4); -fx-background-radius: 15;" AnchorPane.bottomAnchor="121.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="92.0">
          <children>
-            <JFXTextField fx:id="adminNIDField" focusColor="#abe9ff" labelFloat="true" layoutX="33.0" layoutY="26.0" promptText="Manager NID" unFocusColor="#adebdc" />
-            <JFXPasswordField fx:id="adminPassField" focusColor="#abe9ff" labelFloat="true" layoutX="33.0" layoutY="80.0" prefHeight="25.0" prefWidth="135.0" promptText="Password" unFocusColor="#adebdc" />
+            <JFXTextField fx:id="employeeNIDField" focusColor="#abe9ff" labelFloat="true" layoutX="33.0" layoutY="26.0" promptText="Manager NID" unFocusColor="#adebdc" />
+            <JFXPasswordField fx:id="employeePassField" focusColor="#abe9ff" labelFloat="true" layoutX="33.0" layoutY="80.0" prefHeight="25.0" prefWidth="135.0" promptText="Password" unFocusColor="#adebdc" />
             <JFXButton buttonType="RAISED" layoutX="31.0" layoutY="133.0" onAction="#ManagerLogin" prefHeight="25.0" prefWidth="52.0" ripplerFill="#21ff49d4" style="-fx-background-color: #82eeff; -fx-background-radius: 6; -fx-border-color: gray; -fx-border-radius: 6;" stylesheets="@../../buttonHover.css" text="Log In" />
             <JFXButton buttonType="RAISED" layoutX="116.0" layoutY="134.0" onAction="#BackToMain" prefHeight="25.0" prefWidth="52.0" ripplerFill="#c47e7ed3" style="-fx-background-color: #4A4A4A; -fx-background-radius: 6; -fx-border-color: gray; -fx-border-radius: 6;" stylesheets="@../../buttonHover.css" text="Back" textFill="WHITE" />
          </children>

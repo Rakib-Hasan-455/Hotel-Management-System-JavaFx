@@ -99,6 +99,21 @@ FontAwesomeFX 8.9:  <a href = "https://github.com/Rakib-Hasan-455/Hotel_Manageme
  Hotel Management System Database and Install it into your MySql Database.</li>
 <li> Your Java Version Must be 8 or above.</li>
 
+## Default UserNid and Password
+
+`Customer:`<br>
+UserNid     : mursalin <br>
+userPassword: mursalin <br>
+
+`Manager` <br>
+UserNid     : mursalin <br>
+userPassword: mursalin <br>
+
+`admin` <br>
+UserNid     : admin <br>
+userPassword: admin <br>
+
+
 ## Things and Tools I Used in this project:
 <li> IntellIJ IDE </li>
 <li> SceneBuilder </li>

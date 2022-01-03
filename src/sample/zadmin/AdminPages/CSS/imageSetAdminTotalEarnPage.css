@@ -1,0 +1,184 @@
+.bodybg{
+    -fx-pref-height: 570;
+    -fx-pref-width: 840;
+    -fx-background-image:url('images/HMSHOME.jpg');
+    -fx-background-size: cover;
+}
+
+.jfx-text-field .label{
+    -fx-prompt-text-fill: #ffffff;
+    -fx-text-fill: #ffffff;
+}
+
+.jfx-text-field {
+    -fx-prompt-text-fill: #ffffff;
+    -fx-text-fill: white;
+}
+
+.text-field{
+    -fx-prompt-text-fill: rgb(205, 201, 201);
+    -fx-text-fill: #ffffff;
+    /*-fx-background-color: rgba(197, 225, 255, 0.3);*/
+}
+
+
+.searchBox{
+    -fx-prompt-text-fill: #ffffff;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 10;
+    -fx-background-color: gray;
+}
+
+.jfx-text-area{
+    -fx-prompt-text-fill: #ffffff;
+    -fx-text-fill: #ffffff;
+}
+
+.jfx-password-field {
+    -fx-prompt-text-fill: #ffffff;
+    -fx-text-fill: #ffffff;
+}
+
+.label{
+    -fx-text-fill: #ffffff;
+}
+
+.pieChart .label{
+    -fx-text-fill: #000000;
+}
+
+.pieChart{
+    -fx-fill: white;
+}
+
+.chart-pie-label { /*this is what you need for labels*/
+    -fx-fill: #ffffff;
+    -fx-font-size: 1em;
+}
+
+.pieChart .chart-title{
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 1.6em;
+}
+
+.combo-box{
+    -fx-background-color: white;
+}
+
+.combo-box .label{
+    -fx-text-fill: black;
+}
+
+.date-picker{
+    -fx-background-color: white;
+}
+
+.date-picker .label{
+    -fx-text-fill: black;
+}
+
+.choice-box .label{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+
+.table-view{
+    -fx-background-color: transparent;
+    -fx-background-radius: 30;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: #242737;
+    -fx-background-radius: 30;
+    -fx-background-insets:  0 0 10 0;
+    -fx-padding: 0 0 10 0;
+    -fx-effect: dropshadow(two-pass-box, #ff9a9a, 8, 0, 0, 6);
+}
+
+.table-view .column-header, table-view .filler{
+    -fx-size: 40;
+    -fx-border-width: 0 0 3 0;
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header .label{
+    -fx-text-fill: white;
+}
+
+/*.table-view .table-view-cell:odd{*/
+/*    -fx-background-color: rgb(166, 244, 253);*/
+/*    -fx-background-insets:  0 0 1 0;*/
+/*}*/
+
+/*.table-view .table-view-cell:even{*/
+/*    -fx-background-color: rgb(253, 154, 154);*/
+/*    -fx-background-insets: 0 0 1 0;*/
+/*}*/
+.table-view .label{
+    -fx-text-fill: black;
+}
+
+
+.table-row-cell {
+    -fx-background-color: #24273770;
+    -fx-font-weight:bold;
+    -fx-text-fill: whitesmoke;
+}
+
+
+
+.table-row-cell{
+    -fx-text-fill: whitesmoke;
+}
+
+.table-row-cell:even{
+    -fx-background-color: #80808070;
+}
+.table-column {
+    -fx-alignment: CENTER;
+    -fx-text-fill: whitesmoke;
+}
+
+.table-view *.scroll-bar:horizontal *.increment-button,
+.table-view *.scroll-bar:horizontal *.decrement-button {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.table-view *.scroll-bar:horizontal *.increment-arrow,
+.table-view *.scroll-bar:horizontal *.decrement-arrow {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-shape: null;
+}
+
+.table-view *.scroll-bar:vertical *.increment-button,
+.table-view *.scroll-bar:vertical *.decrement-button {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.table-view *.scroll-bar:vertical *.increment-arrow,
+.table-view *.scroll-bar:vertical *.decrement-arrow {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-shape: null;
+}
+
+.button{
+    -fx-background-color: white;
+}
+
+.button:hover{
+    -fx-background-color: Khaki;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}

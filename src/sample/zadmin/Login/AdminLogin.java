@@ -27,31 +27,31 @@ public class AdminLogin implements Initializable {
     public ImageView closeWindow;
 
     public void LoginAdminHome(ActionEvent actionEvent) throws IOException {
-//        String adminNID = adminNIDField.getText();
-//        currentAdminNID = adminNID;
-//        String adminPass = adminPassField.getText();
-//        try {
-//            Connection connection = DBConnection.getConnections();
-//            if (adminNID.isEmpty() || adminPass.isEmpty()) {
-//                CommonTask.showAlert(Alert.AlertType.WARNING, "Error", "Field Can't be Empty!");
-//            } else {
-//                String sql = "SELECT * FROM ADMININFO WHERE NID = ? AND PASSWORD = ?";
-//                PreparedStatement preparedStatement = connection.prepareStatement(sql);
-//                preparedStatement.setString(1, adminNID);
-//                preparedStatement.setString(2, adminPass);
-//                ResultSet resultSet = preparedStatement.executeQuery();
-//                if (resultSet.next()) {
-//                    CommonTask.showAlert(Alert.AlertType.INFORMATION, "Login Success!", "Successfully Logged In!");
+        String adminNID = adminNIDField.getText();
+        currentAdminNID = adminNID;
+        String adminPass = adminPassField.getText();
+        try {
+            Connection connection = DBConnection.getConnections();
+            if (adminNID.isEmpty() || adminPass.isEmpty()) {
+                CommonTask.showAlert(Alert.AlertType.WARNING, "Error", "Field Can't be Empty!");
+            } else {
+                String sql = "SELECT * FROM ADMININFO WHERE NID = ? AND PASSWORD = ?";
+                PreparedStatement preparedStatement = connection.prepareStatement(sql);
+                preparedStatement.setString(1, adminNID);
+                preparedStatement.setString(2, adminPass);
+                ResultSet resultSet = preparedStatement.executeQuery();
+                if (resultSet.next()) {
+                    CommonTask.showAlert(Alert.AlertType.INFORMATION, "Login Success!", "Successfully Logged In!");
                     CommonTask.pageNavigation("/sample/zadmin/AdminPages/AdminMain.fxml", Main.stage,this.getClass(),"Admin Dashboard", 1000, 600);
-//                } else {
-//                    CommonTask.showAlert(Alert.AlertType.ERROR, "Login Failed!", "Incorrect NID or Password!");
-//                }
-//            }
-//        } catch (SQLException e){
-//            e.printStackTrace();
-//        } finally {
-//            DBConnection.closeConnections();
-//        }
+                } else {
+                    CommonTask.showAlert(Alert.AlertType.ERROR, "Login Failed!", "Incorrect NID or Password!");
+                }
+            }
+        } catch (SQLException e){
+            e.printStackTrace();
+        } finally {
+            DBConnection.closeConnections();
+        }
         }
 
     public void BackToMain(ActionEvent actionEvent) throws IOException {

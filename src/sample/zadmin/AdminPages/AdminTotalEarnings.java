@@ -1,9 +1,13 @@
 package sample.zadmin.AdminPages;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.Initializable;
+import javafx.scene.chart.PieChart;
 import javafx.scene.control.Label;
+import javafx.scene.control.Tooltip;
+import javafx.scene.input.MouseEvent;
 import sample._BackEnd.DBConnection;
-import sample._BackEnd.TableView.CustomerCheckOutTable;
 
 import java.net.URL;
 import java.sql.Connection;
@@ -13,18 +17,37 @@ import java.sql.SQLException;
 import java.util.Calendar;
 import java.util.ResourceBundle;
 
-import static sample._BackEnd.DBConnection.closeConnections;
-import static sample.customer.Login.UserLogin.currentCustomerNID;
-
 public class AdminTotalEarnings extends DBConnection implements Initializable {
     public Label earnMonth;
     public Label earnYear;
     public Label earnAll;
 
+    public static long currMonthSum = 0;
+    public static long currYearSum = 0;
+    public static long allYearSum = 0;
+    public PieChart piechart;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        currMonthSum = 0;
+        currYearSum = 0;
+        allYearSum = 0;
         setEarnInfo();
+        loadPieChart();
+    }
+
+    private void loadPieChart() {
+        ObservableList<PieChart.Data> list = FXCollections.observableArrayList();
+        list.add(new PieChart.Data("Earned This Month", currMonthSum));
+        list.add(new PieChart.Data("Earned Current Year", currYearSum));
+        piechart.setData(list);
+//        piechart.setTitle("Earning Comparison");
+
+//        piechart.getData().forEach(data -> {
+//            String percentage = (data.getPieValue()+"");
+//            Tooltip tooltip = new Tooltip(percentage);
+//            Tooltip.install(data.getNode(), tooltip);
+//        });
     }
 
     private void setEarnInfo() {
@@ -36,9 +59,7 @@ public class AdminTotalEarnings extends DBConnection implements Initializable {
                 PreparedStatement statement1 = connection.prepareStatement(sql1);
                 statement1.setString(1, year);
                 ResultSet resultSet1 = statement1.executeQuery();
-                long currMonthSum = 0;
-                long currYearSum = 0;
-                long allYearSum = 0;
+
                 while (resultSet1.next()){
                     currMonthSum += Long.parseLong(resultSet1.getString("TOTALPRICE"));
                 }
@@ -66,4 +87,7 @@ public class AdminTotalEarnings extends DBConnection implements Initializable {
     }
 
 
+    public void reloadChart(MouseEvent event) {
+        loadPieChart();
+    }
 }

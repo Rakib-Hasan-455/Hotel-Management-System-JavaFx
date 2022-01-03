@@ -22,7 +22,7 @@
                   </DropShadow>
                </effect>
             </Label>
-            <Label layoutX="99.0" layoutY="30.0" prefHeight="25.0" prefWidth="149.0" style="-fx-background-radius: 10;" text="    ">
+            <Label fx:id="managerName" layoutX="99.0" layoutY="30.0" prefHeight="25.0" prefWidth="149.0" style="-fx-background-radius: 10;" text="    ">
                <effect>
                   <DropShadow height="65.48" radius="30.7575" spread="0.02" width="59.55">
                      <color>
@@ -40,7 +40,7 @@
                   </DropShadow>
                </effect>
             </Label>
-            <Label layoutX="99.0" layoutY="78.0" prefHeight="25.0" prefWidth="149.0" style="-fx-background-radius: 10;" text="       ">
+            <Label fx:id="managerNID" layoutX="99.0" layoutY="78.0" prefHeight="25.0" prefWidth="149.0" style="-fx-background-radius: 10;" text="       ">
                <effect>
                   <DropShadow height="65.48" radius="30.7575" spread="0.02" width="59.55">
                      <color>
@@ -58,7 +58,7 @@
                   </DropShadow>
                </effect>
             </Label>
-            <Label layoutX="99.0" layoutY="120.0" prefHeight="25.0" prefWidth="149.0" style="-fx-background-radius: 10;" text="        ">
+            <Label fx:id="managerEmail" layoutX="99.0" layoutY="120.0" prefHeight="25.0" prefWidth="149.0" style="-fx-background-radius: 10;" text="        ">
                <effect>
                   <DropShadow height="65.48" radius="30.7575" spread="0.02" width="59.55">
                      <color>
@@ -76,7 +76,7 @@
                   </DropShadow>
                </effect>
             </Label>
-            <Label layoutX="99.0" layoutY="160.0" prefHeight="25.0" prefWidth="149.0" style="-fx-background-radius: 10;" text="          ">
+            <Label fx:id="managerPhone" layoutX="99.0" layoutY="160.0" prefHeight="25.0" prefWidth="149.0" style="-fx-background-radius: 10;" text="          ">
                <effect>
                   <DropShadow height="65.48" radius="30.7575" spread="0.02" width="59.55">
                      <color>
@@ -94,7 +94,7 @@
                   </DropShadow>
                </effect>
             </Label>
-            <Label layoutX="350.0" layoutY="65.0" prefHeight="25.0" prefWidth="149.0" style="-fx-background-radius: 10;" text="           ">
+            <Label fx:id="managerPassword" layoutX="350.0" layoutY="65.0" prefHeight="25.0" prefWidth="149.0" style="-fx-background-radius: 10;" text="           ">
                <effect>
                   <DropShadow height="65.48" radius="30.7575" spread="0.02" width="59.55">
                      <color>
@@ -112,7 +112,7 @@
                   </DropShadow>
                </effect>
             </Label>
-            <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="350.0" layoutY="113.0" prefHeight="65.0" prefWidth="149.0" style="-fx-background-radius: 10;">
+            <Label fx:id="managerAddress" alignment="TOP_LEFT" contentDisplay="TOP" layoutX="350.0" layoutY="113.0" prefHeight="65.0" prefWidth="149.0" style="-fx-background-radius: 10;">
                <effect>
                   <DropShadow height="65.48" radius="30.7575" spread="0.02" width="59.55">
                      <color>
@@ -134,8 +134,8 @@
             </HBox>
             <HBox prefHeight="30.0" prefWidth="141.0" styleClass="titlePane">
                <children>
-                  <FontAwesomeIconView glyphName="USER" size="18" />
-                  <Label style="-fx-text-fill: black;" styleClass="titleText" text="User Info" />
+                  <FontAwesomeIconView glyphName="GITHUB" size="18" />
+                  <Label style="-fx-text-fill: black;" styleClass="titleText" text="EMP Info" />
                </children>
             </HBox>
          </children>

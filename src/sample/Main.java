@@ -42,7 +42,6 @@ public class Main extends Application {
                 y = primaryStage.getY();
 //            }
         });
-
         primaryStage.show();
     }
 

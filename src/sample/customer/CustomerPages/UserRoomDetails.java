@@ -2,6 +2,8 @@ package sample.customer.CustomerPages;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
+import javafx.collections.transformation.SortedList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -78,5 +80,45 @@ public class UserRoomDetails extends DBConnection implements Initializable {
         } finally {
             closeConnections();
         }
+
+
+        // Wrap the ObservableList in a FilteredList (initially display all data).
+        FilteredList<CustomerRoomTable> filteredData = new FilteredList<>(TABLEROW, b -> true);
+        UserSearchRoomStatus.textProperty().addListener((observable, oldValue, newValue) -> {
+            filteredData.setPredicate(search -> { // here search is a object of CustomerRoomTable class
+                if (newValue == null || newValue.isEmpty()) {
+                    return true;
+                }
+                String searchKeyword = newValue.toLowerCase();
+                if (search.getROOMNO().toLowerCase().indexOf(searchKeyword) != -1 ) {
+                    return true; // Filter matches Room No.
+                } else if (search.getTYPE().toLowerCase().indexOf(searchKeyword) != -1 ) {
+                    return true; // Filter matches Room Type.
+                } else if (search.getCAPACITY().toLowerCase().indexOf(searchKeyword) != -1 ) {
+                    return true; // Filter matches Room Capacity Column
+                } else if (search.getPRICEDAY().toLowerCase().indexOf(searchKeyword) != -1 ) {
+                    return true; // Filter matches Room Price
+                } else if(search.getSTATUS().toLowerCase().indexOf(searchKeyword) != -1){
+                    return true; // Matches room status
+                } else {
+                    return false;
+                }
+            });
+        });
+        // 3. Wrap the FilteredList in a SortedList.
+        SortedList<CustomerRoomTable> sortedData = new SortedList<>(filteredData);
+
+        // 4. Bind the SortedList comparator to the TableView comparator.
+        // 	  Otherwise, sorting the TableView would have no effect.
+        sortedData.comparatorProperty().bind(roomTable.comparatorProperty());
+
+        // 5. Add sorted (and filtered) data to the table.
+        roomTable.setItems(sortedData);
+        // show data into table view
+//        tableView.getItems().setAll(contacts);
+        //contacts.clear(); //contacts arraylist empty hobe so that contacts arraylist e future e data add repeat na hoy
+
+
+
     }
 }

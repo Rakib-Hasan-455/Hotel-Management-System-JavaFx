@@ -1,0 +1,11 @@
+Requirements to Run this project/Jar/Exe file:
+1) Install MySql and it should be running on localhost:3306 .
+2) Download Hotel Management System Database and Install it into your MySql Database. It's recommended to name your database as 'HMS0' and restore the database into this 'HMS0' named database.
+3) Your Java Version Must be 8 or above.
+4) Make Sure to edit 'sample/_backend/DBConnection.java' class. Where you need to edit database name, your database username and password which should be according to your own MySql database setup.
+5) Download and install these library files in your IDE,
+                *) JFoenix 8.0.10
+                *) MySql JDBC Connector 8.0.26
+                *) FontAwesomeFX 8.9
+                *) Itextpdf 5.3.4
+6) That's all. Now you can run the application.

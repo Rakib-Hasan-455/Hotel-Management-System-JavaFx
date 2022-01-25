@@ -9,3 +9,30 @@ Requirements to Run this project/Jar/Exe file:
                 *) FontAwesomeFX 8.9
                 *) Itextpdf 5.3.4
 6) That's all. Now you can run the application.
+
+
+-> Default UserNid and Password::
+    Customer:
+    UserNid : mursalin
+    userPassword: mursalin
+
+    Manager
+    UserNid : mursalin
+    userPassword: mursalin
+
+    admin
+    UserNid : admin
+    userPassword: admin
+
+
+
+-> Things and Tools I Used in this project:
+    - IntellIJ IDE to Write Code
+    - SceneBuilder For building GUI
+    - Java 8 version
+    - JavaFX Desktop Framework
+    - MySql Database
+    - MySql JDBC Connector External Library
+    - JFoenix UI Components External Library
+    - FontAwesome Font Components External Library
+    - Itextpdf External Library

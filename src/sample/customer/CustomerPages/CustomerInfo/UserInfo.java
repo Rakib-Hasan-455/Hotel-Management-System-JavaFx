@@ -1,15 +1,19 @@
 package sample.customer.CustomerPages.CustomerInfo;
 
+import com.jfoenix.controls.JFXDialog;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import sample._BackEnd.CommonTask;
 import sample._BackEnd.DBConnection;
 
+import static sample.customer.CustomerPages.CustomerInfo.UserInfoEdit.editedFlag;
 import static sample.customer.Login.UserLogin.currentCustomerNID;
 import java.io.IOException;
 import java.net.URL;
@@ -22,6 +26,8 @@ import java.util.ResourceBundle;
 public class UserInfo implements Initializable {
 
     public Button UserBackToHome;
+    public StackPane rootPane;
+    public AnchorPane rootAnchorPane;
 
     @FXML
     private Label UserNameLabel;
@@ -49,12 +55,17 @@ public class UserInfo implements Initializable {
 
     @FXML
     void UserInfoEdit(ActionEvent event) throws IOException {
+        editedFlag = false;
         CommonTask.pageNavigation("/sample/customer/CustomerPages/CustomerInfo/UserInfoEdit.fxml", (Stage) UserBackToHome.getScene().getWindow(),this.getClass(),"User Home", 550, 400);
     }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         showCustomerInfo();
+        if (editedFlag == true) {
+            CommonTask.showJFXAlert(rootPane, rootAnchorPane, "information", "Updated!", "Successfully Updated!", JFXDialog.DialogTransition.CENTER);
+
+        }
     }
 
     public void showCustomerInfo(){

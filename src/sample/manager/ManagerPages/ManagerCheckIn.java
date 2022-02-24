@@ -117,7 +117,7 @@ public class ManagerCheckIn extends DBConnection implements Initializable {
         Connection connection = getConnections();
         try {
             if(!connection.isClosed()){
-                String sql = "SELECT * FROM CUSTOMERINFO";
+                String sql = "SELECT * FROM CUSTOMERINFO ORDER BY NID";
                 PreparedStatement statement = connection.prepareStatement(sql);
                 ResultSet resultSet = statement.executeQuery();
                 while (resultSet.next()){

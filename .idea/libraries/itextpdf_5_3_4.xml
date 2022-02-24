@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="jfoenix-8.0.10 - Copy">
+  <library name="itextpdf-5.3.4">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/lib/jfoenix-8.0.10 - Copy.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/itextpdf-5.3.4.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

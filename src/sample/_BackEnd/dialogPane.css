@@ -1,0 +1,41 @@
+
+.jfx-dialog-layout {
+    -fx-text-fill: rgba(255, 255, 255, 0.87);
+    -fx-background-color: #25263A;
+}
+
+.jfx-dialog-layout > .jfx-layout-heading {
+    -fx-alignment: center-left;
+    -fx-font-weight: BOLD;
+    -fx-padding: 24 24 14 24;
+}
+
+.jfx-dialog-layout > .jfx-layout-heading .label{
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 15.0;
+}
+
+.jfx-dialog-layout > .jfx-layout-actions {
+    -fx-alignment: center-right;
+    -fx-hgap: 8;
+    -fx-padding: 8 8 8 8;
+}
+
+.jfx-dialog-layout > .jfx-layout-actions .jfx-button {
+    -fx-pref-height: 36;
+    -fx-max-height: 36;
+    -fx-min-width: 64;
+    -fx-padding: 8;
+}
+
+.jfx-dialog-layout > .jfx-layout-body {
+    -fx-alignment: center-left;
+    -fx-padding: 0 24 10 24;
+    -fx-pref-width: 400;
+}
+
+.jfx-dialog-layout > .jfx-layout-body .label {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 13.0;
+    -fx-wrap-text: true;
+}

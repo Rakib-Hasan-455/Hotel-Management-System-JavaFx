@@ -58,7 +58,7 @@ public class ManagerCheckOutDetails implements Initializable {
         Connection connection = getConnections();
         try {
             if(!connection.isClosed()){
-                String sql = "SELECT * FROM CHECKINOUTINFO";
+                String sql = "SELECT * FROM CHECKINOUTINFO ORDER BY SI_NO DESC";
                 PreparedStatement statement = connection.prepareStatement(sql);
                 ResultSet resultSet = statement.executeQuery();
                 while (resultSet.next()){

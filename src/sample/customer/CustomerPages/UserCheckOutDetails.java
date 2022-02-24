@@ -79,7 +79,7 @@ public class UserCheckOutDetails extends DBConnection implements Initializable {
         Connection connection = getConnections();
         try {
             if(!connection.isClosed()){
-                String sql = "SELECT * FROM CHECKINOUTINFO WHERE NID = ?";
+                String sql = "SELECT * FROM CHECKINOUTINFO WHERE NID = ? ORDER BY SI_NO DESC";
                 PreparedStatement statement = connection.prepareStatement(sql);
                 statement.setString(1, currentCustomerNID);
                 ResultSet resultSet = statement.executeQuery();

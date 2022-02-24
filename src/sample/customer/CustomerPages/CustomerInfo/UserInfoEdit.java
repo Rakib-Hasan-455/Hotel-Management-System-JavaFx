@@ -1,5 +1,6 @@
 package sample.customer.CustomerPages.CustomerInfo;
 
+import com.jfoenix.controls.JFXDialog;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -7,6 +8,8 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import sample.Main;
 import sample._BackEnd.CommonTask;
@@ -25,6 +28,8 @@ import java.util.ResourceBundle;
 public class UserInfoEdit implements Initializable {
 
     public Button UserConfirm;
+    public StackPane rootPane;
+    public AnchorPane rootAnchorPane;
     @FXML
     private TextField UserNameEdit;
 
@@ -43,6 +48,8 @@ public class UserInfoEdit implements Initializable {
     @FXML
     private TextArea UserAddressEdit;
 
+    public static boolean editedFlag = false;
+
     @FXML
     void UserConfirmEdit(ActionEvent event) throws IOException, SQLException {
         Connection connection = DBConnection.getConnections();
@@ -52,8 +59,9 @@ public class UserInfoEdit implements Initializable {
         String customerEmail = UserEmailEdit.getText();
         String customerPhone = UserPhoneEdit.getText();
         String customerAddress = UserAddressEdit.getText();
-        if (customerName.isEmpty() || customerNID.isEmpty() || customerPassword.isEmpty() || customerEmail.isEmpty() || customerAddress.isEmpty()) {
-            CommonTask.showAlert(Alert.AlertType.WARNING, "Error", "Field can't be empty!");
+//        System.out.println(customerPhone);
+        if (customerName.isEmpty() || customerNID.isEmpty() || customerPassword.isEmpty() || customerEmail.isEmpty() || customerAddress.isEmpty() || customerPhone.isEmpty()) {
+            CommonTask.showJFXAlert(rootPane, rootAnchorPane, "warning", "Warning!", "Text field can't be empty!", JFXDialog.DialogTransition.CENTER);
         } else {
             String sql = "UPDATE CUSTOMERINFO SET NAME = ?, PASSWORD = ?, EMAIL = ?, PHONE = ?, ADDRESS = ? WHERE NID = ?";
             PreparedStatement preparedStatementUpdate = connection.prepareStatement(sql);
@@ -63,12 +71,14 @@ public class UserInfoEdit implements Initializable {
             preparedStatementUpdate.setString(4, customerPhone);
             preparedStatementUpdate.setString(5, customerAddress);
             preparedStatementUpdate.setString(6, currentCustomerNID);
-            try{
+            try {
                 preparedStatementUpdate.execute();
-                CommonTask.showAlert(Alert.AlertType.INFORMATION, "Successful", "Update Successful!");
+//                CommonTask.showAlert(Alert.AlertType.INFORMATION, "Successful", "Update Successful!");]
+                editedFlag = true;
                 CommonTask.pageNavigation("/sample/customer/CustomerPages/CustomerInfo/UserInfo.fxml", (Stage) UserConfirm.getScene().getWindow(),this.getClass(),"User Home", 550, 400);
+
             } catch (SQLException e){
-                CommonTask.showAlert(Alert.AlertType.ERROR, "Error", "Maybe Sql Error!");
+                CommonTask.showJFXAlert(rootPane, rootAnchorPane, "ERROR", "ERROR!", "Connection Problem!", JFXDialog.DialogTransition.CENTER);
             } finally {
                 DBConnection.closeConnections();
             }
@@ -104,7 +114,9 @@ public class UserInfoEdit implements Initializable {
                     UserPassEdit.setText(customerPasswordSet);
                     UserAddressEdit.setText(customerAddressSet);
                 } else {
-                    CommonTask.showAlert(Alert.AlertType.ERROR, "ERROR", "Can't get/set Info!");
+//                    CommonTask.showAlert(Alert.AlertType.ERROR, "ERROR", "Can't get/set Info!");
+                    CommonTask.showJFXAlert(rootPane, rootAnchorPane, "ERROR", "ERROR!", "Connection Problem!", JFXDialog.DialogTransition.CENTER);
+
                 }
             }
         } catch (SQLException throwables) {

@@ -119,12 +119,12 @@ userPassword: admin <br>
 
 ## Things and Tools I Used in this project:
 <li> IntellIJ IDE </li>
-<li> SceneBuilder </li>
+<li> SceneBuilder 8.5 (for JFoenix 8.0.10 & java 8 compatible) </li>
 <li> Java 8 </li>
 <li> JavaFX </li>
 <li> MySql </li>
 <li> MySql JDBC Connector </li>
-<li> JFoenix UI Components </li>
+<li> JFoenix UI Components 8.0.10 </li>
 <li> FontAwesome Font Components </li>
 
 ## Contributing

@@ -1,5 +1,6 @@
 package sample.customer.Login;
 
+import com.jfoenix.controls.JFXDialog;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -7,6 +8,8 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.StackPane;
 import sample.Main;
 import sample._BackEnd.CommonTask;
 import sample._BackEnd.DBConnection;
@@ -26,6 +29,9 @@ public class UserLogin implements Initializable {
     public static String currentCustomerNID;
     public ImageView closeWindow;
 
+    public StackPane rootPane;
+    public AnchorPane rootAnchorPane;
+
     @FXML
     public void UserLoginn(ActionEvent actionEvent) throws IOException, SQLException {
         Connection connection = DBConnection.getConnections();
@@ -35,7 +41,8 @@ public class UserLogin implements Initializable {
         try {
 
             if (customerNID.isEmpty() == true || customerPass.isEmpty() == true) {
-                CommonTask.showAlert(Alert.AlertType.WARNING, "Error", "Field Can't be Empty!");
+//                CommonTask.showAlert(Alert.AlertType.WARNING, "Error", "Field Can't be Empty!");
+                CommonTask.showJFXAlert(rootPane, rootAnchorPane, "warning", "Warning!", "Field Can't be Empty!", JFXDialog.DialogTransition.CENTER);
             } else {
                 String sql = "SELECT * FROM CUSTOMERINFO WHERE NID = ? AND PASSWORD = ?";
                 PreparedStatement preparedStatement = connection.prepareStatement(sql);
@@ -43,10 +50,10 @@ public class UserLogin implements Initializable {
                 preparedStatement.setString(2, customerPass);
                 ResultSet resultSet = preparedStatement.executeQuery();
                 if (resultSet.next()) {
-                    CommonTask.showAlert(Alert.AlertType.INFORMATION, "Login Success!", "Successfully Logged In!");
+                    //CommonTask.showAlert(Alert.AlertType.INFORMATION, "Login Success!", "Successfully Logged In!");
                     CommonTask.pageNavigation("/sample/customer/CustomerPages/UserMain.fxml", Main.stage, this.getClass(), "User Dashboard", 800, 400);
                 } else {
-                    CommonTask.showAlert(Alert.AlertType.ERROR, "Login Failed!", "Incorrect NID or Password!");
+                    CommonTask.showJFXAlert(rootPane, rootAnchorPane, "warning", "Login Failed!", "Wrong UserNid/Password !", JFXDialog.DialogTransition.CENTER);
                 }
             }
         } catch (SQLException e){

@@ -1,5 +1,6 @@
 package sample.customer.CustomerPages;
 
+import com.jfoenix.controls.JFXDialog;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -8,6 +9,7 @@ import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
+import sample._BackEnd.CommonTask;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -26,12 +28,12 @@ public class Usermain implements Initializable {
     public FontAwesomeIconView minimizeWindow;
     public FontAwesomeIconView maximizeWindow;
     public AnchorPane userMainPane;
+    public StackPane rootPane;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-        windowLoad("UserHome.fxml");
-
+        windowLoadStackPane("UserHome.fxml");
         closeWindow.setOnMouseClicked(event -> {
             System.exit(0);
         });
@@ -64,8 +66,21 @@ public class Usermain implements Initializable {
         }
     }
 
+    public void windowLoadStackPane(String URL)
+    {
+        try
+        {
+            StackPane pane = FXMLLoader.load(getClass().getResource(URL));
+            borderpane.setCenter(pane);
+        }
+        catch(Exception err)
+        {
+            System.out.println("Problem : " + err);
+        }
+    }
+
     public void GoHome(ActionEvent actionEvent) {
-        windowLoad("UserHome.fxml");
+        windowLoadStackPane("UserHome.fxml");
     }
 
     public void GoRoomDetails(ActionEvent actionEvent) {
@@ -73,7 +88,7 @@ public class Usermain implements Initializable {
     }
 
     public void GoCheckIn(ActionEvent actionEvent) {
-        windowLoad("UserCheckIn.fxml");
+        windowLoadStackPane("UserCheckIn.fxml");
     }
 
     public void GoCheckDetails(ActionEvent actionEvent) {

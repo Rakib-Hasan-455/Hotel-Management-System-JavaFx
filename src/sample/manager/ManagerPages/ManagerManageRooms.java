@@ -104,7 +104,7 @@ public class ManagerManageRooms extends DBConnection implements Initializable {
         Connection connection = getConnections();
         try {
             if(!connection.isClosed()){
-                String sql = "SELECT * FROM ROOMINFO";
+                String sql = "SELECT * FROM ROOMINFO ORDER BY STATUS";
                 PreparedStatement statement = connection.prepareStatement(sql);
                 ResultSet resultSet = statement.executeQuery();
                 while (resultSet.next()){

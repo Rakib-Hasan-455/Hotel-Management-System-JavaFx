@@ -97,7 +97,7 @@ public class ManagerCheckOut extends DBConnection implements Initializable {
         Connection connection = getConnections();
         try {
             if(!connection.isClosed()){
-                String sql = "SELECT * FROM CHECKINOUTINFO WHERE CHECKEDOUT IS NULL";
+                String sql = "SELECT * FROM CHECKINOUTINFO WHERE CHECKEDOUT IS NULL ORDER BY SI_NO DESC";
                 PreparedStatement statement = connection.prepareStatement(sql);
                 ResultSet resultSet = statement.executeQuery();
                 while (resultSet.next()){

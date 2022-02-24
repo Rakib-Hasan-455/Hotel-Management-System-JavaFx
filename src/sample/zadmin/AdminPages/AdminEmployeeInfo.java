@@ -4,7 +4,6 @@ import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
@@ -18,10 +17,7 @@ import javafx.stage.StageStyle;
 import javafx.util.Callback;
 import sample._BackEnd.CommonTask;
 import sample._BackEnd.DBConnection;
-import sample._BackEnd.TableView.AdminCustomerTable;
 import sample._BackEnd.TableView.AdminEmployeeTable;
-import sample._BackEnd.TableView.ManagerRoomTable;
-import sample.zadmin.AdminPages.EditCustomerEmployee.CustomerInfoEdit;
 import sample.zadmin.AdminPages.EditCustomerEmployee.EmployeeInfoEdit;
 
 import java.io.IOException;
@@ -68,7 +64,7 @@ public class AdminEmployeeInfo extends DBConnection implements Initializable {
         Connection connection = getConnections();
         try {
             if (!connection.isClosed()) {
-                String sql = "SELECT * FROM EMPLOYEEINFO";
+                String sql = "SELECT * FROM EMPLOYEEINFO ORDER BY NID";
                 PreparedStatement statement = connection.prepareStatement(sql);
                 ResultSet resultSet = statement.executeQuery();
                 while (resultSet.next()) {

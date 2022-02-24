@@ -1,6 +1,7 @@
 package sample.customer.CustomerPages;
 
 import com.jfoenix.controls.JFXComboBox;
+import com.jfoenix.controls.JFXDialog;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.event.EventHandler;
@@ -11,6 +12,7 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.StackPane;
 import sample.Main;
 import sample._BackEnd.CommonTask;
 import sample._BackEnd.DBConnection;
@@ -35,6 +37,7 @@ public class UserCheckIn implements Initializable {
     public Label roomPriceField;
     public AnchorPane userCheckInPane;
     public JFXComboBox userRoomChoicebox;
+    public StackPane rootPane;
     @FXML
     private Label UserNameField;
     @FXML
@@ -59,12 +62,13 @@ public class UserCheckIn implements Initializable {
         String Address = UserAddressField.getText();
         String RoomNo = userRoomChoicebox.getValue()+"";
         String CheckInDate = UserCheckIndate.getValue()+"";
-        String roomCapacity = roomCapacityField.getText();
-        String roomType = roomTypeField.getText();
-        String roomPrice = roomPriceField.getText();
+        String roomCapacity = roomCapacityField.getText()+"";
+        String roomType = roomTypeField.getText()+"";
+        String roomPrice = roomPriceField.getText()+"";
         Connection connection = DBConnection.getConnections();
-        if (RoomNo.isEmpty() || CheckInDate.isEmpty()) {
-            CommonTask.showAlert(Alert.AlertType.WARNING, "Error", "Field can't be empty!");
+        if (roomType.equals("") || roomPrice.equals("") || roomCapacity.equals("") || CheckInDate.equals("null")) {
+//            CommonTask.showAlert(Alert.AlertType.WARNING, "Error", "Field can't be empty!");
+            CommonTask.showJFXAlert(rootPane, userCheckInPane, "warning", "Warning!", "Field Can't be Empty!", JFXDialog.DialogTransition.CENTER);
         } else {
             String sql = "INSERT INTO CHECKINOUTINFO (NAME, NID, EMAIL, PHONE, ADDRESS, ROOMNO, CHECKEDIN, ROOMTYPE, CAPACITY, PRICEDAY) VALUES(?,?,?,?,?,?,?,?,?,?)";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
@@ -84,14 +88,17 @@ public class UserCheckIn implements Initializable {
                 PreparedStatement preparedStatement1 = connection.prepareStatement(sql1);
                 preparedStatement1.setString(1, RoomNo);
                 preparedStatement1.execute();
-                CommonTask.showAlert(Alert.AlertType.INFORMATION, "Successful", "Check-in Successful!");
-                } catch (SQLException e){
-                CommonTask.showAlert(Alert.AlertType.ERROR, "Error", "SQL Exception found!");
+//                CommonTask.showAlert(Alert.AlertType.INFORMATION, "Successful", "Check-in Successful!");
+
+                CommonTask.showJFXAlert(rootPane, userCheckInPane, "information", "Successful!", "Check In Successful!", JFXDialog.DialogTransition.CENTER);
+            } catch (SQLException e){
+                CommonTask.showJFXAlert(rootPane, userCheckInPane, "information", "Error!", "SQL Exception Happened!", JFXDialog.DialogTransition.CENTER);
             } finally {
                 DBConnection.closeConnections();
             }
         }
         updateChoiceBox();
+        clearTextFields();
     }
 
 
@@ -120,7 +127,7 @@ public class UserCheckIn implements Initializable {
                     roomPriceField.setText(roomPriceDay);
                     roomTypeField.setText(roomType);
                 } else {
-                    CommonTask.showAlert(Alert.AlertType.ERROR, "ERROR", "Can't get/set Info!");
+//                    CommonTask.showAlert(Alert.AlertType.ERROR, "ERROR", "Can't get/set Info!");
                 }
             }
         } catch (SQLException throwables) {
@@ -150,6 +157,7 @@ public class UserCheckIn implements Initializable {
             DBConnection.closeConnections();
         }
         userRoomChoicebox.getItems().setAll(rooms);
+        userRoomChoicebox.setValue(null);
     }
 
     public void setAndShowCustomerInfo(){
@@ -175,7 +183,7 @@ public class UserCheckIn implements Initializable {
                     //UserPasswordLabel.setText(customerPassword);
                     UserAddressField.setText(customerAddress);
                 } else {
-                    CommonTask.showAlert(Alert.AlertType.ERROR, "ERROR", "Can't get/set Info!");
+                    CommonTask.showAlert(Alert.AlertType.ERROR, "ERROR", "SQL connection Error!");
                 }
             }
         } catch (SQLException throwables) {
@@ -184,4 +192,13 @@ public class UserCheckIn implements Initializable {
             DBConnection.closeConnections();
         }
     }
+
+    private void clearTextFields() {
+        roomTypeField.setText("");
+        roomCapacityField.setText("");
+        roomPriceField.setText("");
+        UserCheckIndate.getEditor().clear();
+//        roomChoiceBox.setValue(null);
+    }
+
 }

@@ -105,12 +105,12 @@ itextpdf-5.3.4:  <a href = "https://github.com/Rakib-Hasan-455/Hotel_Management_
 ## Default UserNid and Password
 
 `Customer:`<br>
-UserNid     : mursalin <br>
-userPassword: mursalin <br>
+UserNid     : 4 <br>
+userPassword: 4 <br>
 
 `Manager` <br>
-UserNid     : mursalin <br>
-userPassword: mursalin <br>
+UserNid     : 2 <br>
+userPassword: 2 <br>
 
 `admin` <br>
 UserNid     : admin <br>

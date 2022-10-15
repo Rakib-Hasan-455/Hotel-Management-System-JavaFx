@@ -1,5 +1,9 @@
 # `Hotel Management System With JavaFX`<br>
 
+![](https://img.shields.io/github/last-commit/rakib-hasan-455/Hotel-Management-System-JavaFx)
+![](https://tokei.rs/b1/github/rakib-hasan-455/Hotel-Management-System-JavaFx?category=files)
+![](https://img.shields.io/tokei/lines/github/rakib-hasan-455/Hotel-Management-System-JavaFx)
+![](https://img.shields.io/github/repo-size/rakib-hasan-455/Hotel-Management-System-JavaFx)
 ## Introduction:
 
 Hotel management System is a desktop application where users
